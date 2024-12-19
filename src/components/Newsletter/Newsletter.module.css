@@ -1,0 +1,195 @@
+/* Updated Newsletter.module.css */
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --background-gradient: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --text-color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .section {
+    padding: 2rem;
+    background: var(--background-gradient);
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    margin: 2rem auto;
+    max-width: 1200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .tips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .reviewsection {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--background-gradient);
+    box-shadow: var(--card-shadow);
+  }
+  
+  .customerStories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .story {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .story:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .input, .textarea, .file {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input:focus, .textarea:focus, .file:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .uploadedImage {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  .rating {
+    margin-bottom: 15px;
+  }
+  
+  .ratingButtons {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  .ratingButton {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: white;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .ratingButton:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .selected {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

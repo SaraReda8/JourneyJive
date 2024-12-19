@@ -1,0 +1,43 @@
+.positionRelative {
+    position: relative;
+    justify-content: center;
+    align-items: top;
+    margin-top: 20px;
+}
+
+.searchContainer {
+    max-width: 800px; /* Set a max width for the form */
+    width: 100%; /* Ensure it takes full width within the max */
+    padding: 0; /* Remove padding */
+}
+
+.searchForm {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px; /* Add padding for form content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+}
+
+.formSelect {
+    font-size: 1.2rem;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+}
+
+.formControl {
+    font-size: 1.2rem;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 992px) {
+    .searchForm {
+        width: 90%;
+        position: static;
+        transform: none;
+    }
+}

@@ -1,0 +1,92 @@
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+/* Root variables for theming */
+:root {
+    --main-color: #ff4838;
+  --sec-color:#4d8cd1;
+    --dark-color: #363636;
+    --hover-color: rgb(255, 141, 85);
+    --font-family: 'Encode Sans Expanded', sans-serif;
+    --light-color: white;
+}
+
+body {
+    font-family: var(--font-family) !important;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Button Styling */
+/* Add !important for critical styles to override Bootstrap */
+.btn1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: white !important;
+  background-color: var(--main-color) !important;
+  border: 2px solid var(--main-color) !important;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px 24px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: white !important;
+  color: var(--main-color) !important;
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.navlink {
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navlink:hover {
+    color: var(--sec-color);
+}
+.text-main{
+  color: var(--main-color);
+}
+.text-main:hover{
+  color:black !important;
+}
+.special{
+  font-family: 'Brush Script MT', cursive;
+
+}
+.btn2 {
+  background-color: #2685ebc5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  background-color: #0a4584;
+}
+
+h1, h2, h3, h4, h5, h6,.title {
+  font-family: 'Poppins', sans-serif;
+}
+.bg-main{
+  background-color: var(--main-color);
+}
+.widthc{
+ width: 450px;
+ height: auto;
+}
+.seccolor{
+  color: var(--sec-color);
+}

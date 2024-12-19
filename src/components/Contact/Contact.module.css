@@ -1,0 +1,129 @@
+/* Header Section */
+.header {
+    background: url("../../Assets/Images/black2.jpg") no-repeat center center/cover;
+    height: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .headerContent h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .headerContent p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+  }
+  
+  /* Container Styles */
+  .container {
+    margin-top: 30px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Card Styles */
+  .card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .iconWrapper {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 15px;
+  
+  }
+  
+  .iconCircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .iconCircle:hover {
+    background-color:var(--sec-color);
+  }
+  
+  .cardTitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cardBody {
+    font-size: 1rem;
+    color: #000000;
+  }
+  .formWrapper {
+    display: flex;
+    justify-content: center; /* Centers the form horizontally */
+    align-items: center; /* Centers the form vertically */
+    margin-top: 50px; /* Adds spacing above the form */
+  }
+  
+  .formContainer {
+    width: 100%;
+    max-width: 900px; /* Limits the maximum width of the form */
+    padding: 30px; /* Adds internal padding */
+    border: 1px solid #ddd; /* Adds a light border */
+    border-radius: 8px; /* Rounds the corners */
+    background-color: #fff; /* White background for better contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  }
+  
+  .formContainer h2 {
+    text-align: center; /* Centers the form heading */
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .button {
+    display: block; /* Ensures the button spans the form's width */
+    width: 100%; /* Full width */
+    background-color: var(--sec-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  .text2{
+    color: var(--sec-color);
+    font-weight: bold;
+  }

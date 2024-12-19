@@ -1,0 +1,118 @@
+.everyone-holidays-section .card {
+    height: 200px;
+}
+
+.everyone-holidays-section .card:hover {
+    cursor: pointer;
+}
+
+.everyone-holidays-section .row .col-md-6:first-of-type .image-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../../Assets/Images/all-inclusive-all.jpg);
+}
+
+.everyone-holidays-section .row .col-md-6:nth-of-type(2) .image-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../../Assets/Images/thailand.jpg);
+}
+
+.everyone-holidays-section .row .col-md-6:nth-of-type(3) .image-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../../Assets/Images/boat-cruise.jpg);
+}
+
+.everyone-holidays-section .row .col-md-6:nth-of-type(4) .image-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../../Assets/Images/city-break.jpg);
+}
+
+.everyone-holidays-section .row .col-md-6:nth-of-type(5) .image-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../../Assets/Images/hotel-holiday.jpg);
+}
+
+.everyone-holidays-section .row .col-md-6:last-of-type(6) .image-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../../Assets/Images/snowy-village.jpg);
+}
+.everyone-holidays-section .row .col-md-6:nth-of-type(7) .image-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../../Assets/Images/v3.jpg);
+}
+
+.everyone-holidays-section .row .col-md-6:nth-of-type(8) .image-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../../Assets/Images/Luxuryescapes.jpg);
+}
+
+.everyone-holidays-section .row .col-md-6:last-of-type(9) .image-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../../Assets/Images/aboutus.jpg);
+}
+
+.everyone-holidays-section .image-div {
+    background-position: center;
+    background-size: cover;
+}
+
+.everyone-holidays-section .price {
+    font-size: 1.75rem;
+}
+
+@media screen and (max-width: 576px) {
+    .everyone-holidays-section .card {
+        height: 300px;
+    }
+}
+.everyone-holidays-section {
+    animation: fadeIn 2s ease-in-out;
+    padding: 20px;
+}
+
+.everyone-holidays-section .card {
+    height: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.everyone-holidays-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.everyone-holidays-section .image-div {
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.3s;
+    border-radius: 10px 0 0 10px;
+}
+
+.everyone-holidays-section .image-div:hover {
+    transform: scale(1.05);
+}
+
+.everyone-holidays-section .quote {
+    font-size: 1.75rem;
+    color: #555555;
+    max-width: 600px;
+}
+
+.advertisement-section {
+    background: linear-gradient(90deg, #12639c, #4db6da);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.advertisement-section .ad-title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.advertisement-section .ad-description {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: beige;
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

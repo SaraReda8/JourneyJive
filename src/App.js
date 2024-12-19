@@ -1,0 +1,59 @@
+import React from 'react';
+import './App.css';
+import Layout from './components/Layout/Layout';
+import NotFound from './components/NotFound/NotFound';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import SignIn from './components/SignIn/SignIn';
+import Signup from './components/Signup/Signup';
+import Holidays from './Pages/Holidays/Holidays';
+import TermOfServices from './components/TermOfService/TermOfService';
+import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
+import CityBreaks from './Pages/CityBreaks/CityBreaks';
+import Gallery from './components/Gallery/Gallery';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TourGuide from './components/TourGuide/TourGuide';
+import Destinations from './Pages/Destinations/Destinations';
+import HolidayDetails from './Pages/Holidays/HolidayDetails.jsx';
+import Contact from './components/Contact/Contact';
+import PrivacyPolicyy from './components/PrivacyPolicyy/PrivacyPolicyy';
+import Feedback from './components/Feedback/Feedback';
+import Blog from './components/Blog/Blog';
+import New from './components/New/New';
+import Faq from './components/Faq/Faq';
+import Newsletter from './components/Newsletter/Newsletter';
+// Define the routes
+const routers = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      { path: 'Home', element: <Home /> },
+      { path: '*', element: <NotFound /> },
+      { path: 'about', element: <About /> },
+      { path: 'terms', element: <TermOfServices /> },
+      { path: 'citybreaks', element: <CityBreaks /> },
+      { path: 'faqs', element: <Faq /> },
+      { path: 'destinations', element: <Destinations /> },
+      { path: 'holidayDetails', element: <HolidayDetails /> },
+      { path: 'privacypolicy', element: <PrivacyPolicyy /> },
+      { path: 'feedback', element: <Feedback /> },
+      { path: 'blog', element: <Blog /> },
+      { path: 'new', element: <New /> },
+      { path: 'gallery', element: <Gallery /> },
+      { path: 'signin', element: <SignIn /> },
+      { path: 'signup', element: <Signup /> },
+      { path: 'holidays', element: <Holidays /> },
+      { path: 'tourguide', element: <TourGuide /> },
+      { path: 'ContactUs', element: <Contact /> },
+      { path: 'newsletter', element: <Newsletter /> },
+    ],
+  },
+]);
+
+function App() {
+  return <RouterProvider router={routers} />;
+}
+
+export default App;

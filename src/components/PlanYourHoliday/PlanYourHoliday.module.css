@@ -1,0 +1,38 @@
+.card {
+    background-image: url('../../Assets/Images/sea2.jpg'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    height: 500px; /* Adjust height as needed */
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.content {
+    /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for text readability */
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: rgb(12, 148, 165);
+}
+
+.text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+

@@ -1,0 +1,123 @@
+.tourGuideContainer {
+  padding: 20px;
+}
+
+.introImageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.introImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.overlayText {
+  position: absolute;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+.tourGuideContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px;
+  justify-content: center; /* Centers the grid content */
+  width: 100%;
+  max-width: 1200px; /* Optional: limit the width of the grid */
+}
+
+.card {
+  position: relative;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.cardImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.cardInfo {
+  padding: 10px;
+  text-align: center;
+}
+
+.cardInfo h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.cardInfo p {
+  color: gray;
+}
+
+.socialIcons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.socialIcons i {
+  font-size: 1.2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card:hover .socialIcons {
+  opacity: 1;
+  pointer-events: auto; /* Enable interactions on hover */
+}
+@media (max-width: 768px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .cardsContainer {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
+  }
+}

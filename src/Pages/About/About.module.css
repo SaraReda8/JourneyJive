@@ -1,0 +1,90 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* General Styling */
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.aboutImg {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  padding: 1rem;
+  margin-top: 50px;
+}
+
+/* About Section with Border */
+.borderSection {
+  border: 4px solid hwb(0 100% 0% / 0.849);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* Why Choose Us Section */
+.why {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Icons */
+.icon {
+  font-size: 2rem;
+  color: #4d8cd1;
+}
+
+/* Card Styling */
+.card {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+}
+.aboutImage{
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+/* About Image Content */
+.aboutImageContent {
+  background-color:var(--main-color);
+  color: white;
+  width: 300px;
+  padding: 20px;
+  line-height: 0.;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 575px) {
+  .aboutImageContent {
+    width: 261px;
+    line-height: 1.5;
+  }
+}
