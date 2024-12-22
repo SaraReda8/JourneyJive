@@ -1,92 +1,144 @@
-import React, { useRef } from 'react';
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import styles from './SearchSection.module.css';
+import React, { useState } from "react";
+import styles from "./SearchSection.module.css";
 
-export default function SearchSection() {
-    const checkInRef = useRef();
-    const checkOutRef = useRef();
+const destinations = [
+  "Egypt", "Italy", "France", "Japan", "Brazil",
+  "India", "Mexico", "Australia", "Germany", "Canada",
+  "Greece", "South Africa", "Thailand", "Turkey", "Argentina",
+  "China", "Spain", "Russia", "United States", "Morocco",
+];
 
-    return (
-        <div className={styles.positionRelative}>
-            <Container className={styles.searchContainer}>
-                <Form className={`${styles.searchForm} p-4 rounded shadow-lg`}>
-                    <Row className='g-3 align-items-center'>
-                        <Col lg={3} sm={12}>
-                            <Form.Select className={`${styles.formSelect} form-select-lg`}>
-                                <option>Search place</option>
-                                <option value="1">London</option>
-                                <option value="2">Dubai</option>
-                                <option value="3">Paris</option>
-                                <option value="4">New York</option>
-<option value="5">Tokyo</option>
-<option value="6">Sydney</option>
-<option value="7">Toronto</option>
-<option value="8">Berlin</option>
-<option value="9">Singapore</option>
-<option value="10">Los Angeles</option>
-<option value="11">Rome</option>
-<option value="12">Amsterdam</option>
-<option value="13">Hong Kong</option>
-<option value="14">Barcelona</option>
-<option value="15">Istanbul</option>
-<option value="16">Seoul</option>
-<option value="17">Vienna</option>
-<option value="18">Madrid</option>
-<option value="19">Moscow</option>
-<option value="20">Bangkok</option>
-<option value="21">San Francisco</option>
-<option value="22">Mexico City</option>
-<option value="23">Cairo</option>
+const typologies = [
+  "Relax", "Cultural", "Sporty", "History", "Adventure",
+  "Luxury", "Nature",
+];
 
-                            </Form.Select>
-                        </Col>
-                        <Col lg={2} sm={6}>
-                            <Form.Select className={`${styles.formSelect} form-select-lg`}>
-                            <option>Rooms</option>
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
+const difficulties = ["Low", "Medium", "High"];
 
-                            </Form.Select>
-                        </Col>
-                        <Col lg={2} sm={6}>
-                            <Form.Control 
-                                type='text'
-                                ref={checkInRef}
-                                placeholder='Check-in date'
-                                onFocus={() => (checkInRef.current.type = 'date')}
-                                onBlur={() => (checkInRef.current.type = 'text')}
-                                className={`${styles.formControl} form-control-lg`}
-                            />
-                        </Col>
-                        <Col lg={2} sm={6}>
-                            <Form.Control 
-                                type='text'
-                                ref={checkOutRef}
-                                placeholder='Check-out date'
-                                onFocus={() => (checkOutRef.current.type = 'date')}
-                                onBlur={() => (checkOutRef.current.type = 'text')}
-                                className={`${styles.formControl} form-control-lg`}
-                            />
-                        </Col>
-                        <Col lg={3} sm={6} className="d-grid">
-                        <Button className='btn btn2'>Search</Button>
+const SearchSection = () => {
+  const [destination, setDestination] = useState("");
+  const [typology, setTypology] = useState("");
+  const [difficulty, setDifficulty] = useState("");
+  const [rooms, setRooms] = useState(1);
+  const [checkIn, setCheckIn] = useState("");
+  const [checkOut, setCheckOut] = useState("");
 
-                        </Col>
-                    </Row>
-                </Form>
-            </Container>
+  const handleSearch = (e) => {
+    e.preventDefault();
+    console.log("Searching with:", {
+      destination,
+      typology,
+      difficulty,
+      rooms,
+      checkIn,
+      checkOut,
+    });
+  };
+
+  return (
+    <div className={styles.SearchSectionContainer}>
+      <form className={styles.formContainer} onSubmit={handleSearch}>
+        <h1 className={styles.title}>Search for Your Next Adventure</h1>
+        <div className={styles.formGroupContainer}>
+          {/* Destination Field */}
+          <div className={styles.formGroup}>
+            <label htmlFor="destination" className={styles.label}>
+              Destination
+            </label>
+            <select
+              id="destination"
+              className={styles.inputField}
+              value={destination}
+              onChange={(e) => setDestination(e.target.value)}
+            >
+              <option value="">Select a destination</option>
+              {destinations.map((dest, index) => (
+                <option key={index} value={dest}>{dest}</option>
+              ))}
+            </select>
+          </div>
+          {/* Typology Field */}
+          <div className={styles.formGroup}>
+            <label htmlFor="typology" className={styles.label}>
+              Typology
+            </label>
+            <select
+              id="typology"
+              className={styles.inputField}
+              value={typology}
+              onChange={(e) => setTypology(e.target.value)}
+            >
+              <option value="">Select a typology</option>
+              {typologies.map((type, index) => (
+                <option key={index} value={type}>{type}</option>
+              ))}
+            </select>
+          </div>
+          {/* Difficulty Field */}
+          <div className={styles.formGroup}>
+            <label htmlFor="difficulty" className={styles.label}>
+              Difficulty
+            </label>
+            <select
+              id="difficulty"
+              className={styles.inputField}
+              value={difficulty}
+              onChange={(e) => setDifficulty(e.target.value)}
+            >
+              <option value="">Select difficulty</option>
+              {difficulties.map((diff, index) => (
+                <option key={index} value={diff}>{diff}</option>
+              ))}
+            </select>
+          </div>
         </div>
-    );
-}
+        {/* Number of Rooms Field */}
+        <div className={styles.formGroup}>
+          <label htmlFor="rooms" className={styles.label}>
+            Number of Rooms
+          </label>
+          <input
+            id="rooms"
+            type="number"
+            min="1"
+            value={rooms}
+            className={styles.inputField}
+            onChange={(e) => setRooms(e.target.value)}
+          />
+        </div>
+        {/* Check-In Field */}
+        <div className={styles.formGroup}>
+          <label htmlFor="checkIn" className={styles.label}>
+            Check-In
+          </label>
+          <input
+            id="checkIn"
+            type="date"
+            value={checkIn}
+            className={styles.inputField}
+            onChange={(e) => setCheckIn(e.target.value)}
+          />
+        </div>
+        {/* Check-Out Field */}
+        <div className={styles.formGroup}>
+          <label htmlFor="checkOut" className={styles.label}>
+            Check-Out
+          </label>
+          <input
+            id="checkOut"
+            type="date"
+            value={checkOut}
+            className={styles.inputField}
+            onChange={(e) => setCheckOut(e.target.value)}
+          />
+        </div>
+        {/* Submit Button */}
+        <button type="submit" className='btn2 w-100'>
+          Search
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default SearchSection;

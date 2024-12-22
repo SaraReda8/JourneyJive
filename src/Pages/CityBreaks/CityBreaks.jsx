@@ -3,7 +3,6 @@ import CityBreaksItems from '../../Assets/files(js)/CityBreaksItems';
 import CityBreakCard from '../../components/CityBreakCard/CityBreakCard';
 import Container from 'react-bootstrap/Container';
 import styles from './CityBreaks.module.css';
-import hotelsImage from '../../Assets/Images/black2.jpg';
 import Breadcrumbs from './../../components/Breadcrumbs/Breadcrumbs';
 
 export default function CityBreaks() {

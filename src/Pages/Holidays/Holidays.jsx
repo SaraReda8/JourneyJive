@@ -6,7 +6,7 @@ import './Holidays.css';
 // import HolidayPlanSection from '../../Components/HolidayPlanSection/HolidayPlanSection';
 // import RecommendedSection from '../../Components/RecommendedSection/RecommendedSection';
 import EveryoneHolidays from '../../components/EveryoneHolidays/EveryoneHolidays';
-import RecentHolidays from '../../components/RecentHolidays/RecentHolidays';
+// import RecentHolidays from '../../components/RecentHolidays/RecentHolidays';
 import PlanYourHoliday from '../../components/PlanYourHoliday/PlanYourHoliday';
 import RecommendationSection from '../../components/RecommendationSection/RecommendationSection';
 

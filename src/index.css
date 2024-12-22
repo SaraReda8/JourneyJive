@@ -59,7 +59,7 @@ body {
 .text-main:hover{
   color:black !important;
 }
-.special{
+.special {
   font-family: 'Brush Script MT', cursive;
 
 }
@@ -71,6 +71,11 @@ body {
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .btn2:hover {

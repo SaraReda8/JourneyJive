@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Contact.module.css";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";
-import {  Col, Form, Button} from 'react-bootstrap';
+import {   Form, Button} from 'react-bootstrap';
 import { Formik, Field, ErrorMessage, Form as FormikForm } from 'formik';
 import * as Yup from 'yup';
 import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
@@ -129,7 +129,7 @@ export default function ContactUs() {
           <ErrorMessage name="message" component="div" className="text-danger" />
         </Form.Group>
 
-        <Button type="submit" className={styles.button}>Send a Message</Button>
+        <Button  className='btn2 w-100'>Send a Message</Button>
       </FormikForm>
     </Formik>
   </div>

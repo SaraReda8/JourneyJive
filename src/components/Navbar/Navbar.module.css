@@ -27,7 +27,7 @@
 }
 
 .brandName:hover {
-  color: #4d8cd1;
+  color: var(--sec-color);
 }
 
 /* Nav Links Styling */

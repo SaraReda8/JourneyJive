@@ -60,7 +60,6 @@ export default function Home(){
     
     return <>
     <Plane/>
-    <SearchSection/>
     <TopDestinations/>
     <section className={styles.callUs}>
   <Container>
@@ -80,7 +79,7 @@ export default function Home(){
           href="tel:6398312365"
           className={`${styles.secondaryBtn} bounce`}
           rel="no"
-        >
+          >
           Contact Us!
         </a>
       </Col>
@@ -91,6 +90,7 @@ export default function Home(){
 
 
     <Reviews/>
+          <SearchSection/>
     
     </>
 }

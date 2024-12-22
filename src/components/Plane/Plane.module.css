@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     background: #f0f0f0;
+    
   }
   
   .bg {
@@ -59,19 +60,7 @@
     gap: 10px;
   }
   
-  .btn2 {
-    background-color: #2685ebc5;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn2:hover {
-    background-color: #0a4584;
-  }
+
   
   .plane {
     flex: 1;

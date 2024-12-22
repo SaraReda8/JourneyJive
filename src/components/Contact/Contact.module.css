@@ -109,21 +109,9 @@
     color: #333;
   }
   
-  .button {
-    display: block; /* Ensures the button spans the form's width */
-    width: 100%; /* Full width */
-    background-color: var(--sec-color);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
+
   .text2{
     color: var(--sec-color);
     font-weight: bold;
+    align-content: center;
   }
