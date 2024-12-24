@@ -134,7 +134,7 @@ const SearchSection = () => {
         </div>
         {/* Submit Button */}
         <button type="submit" className='btn2 w-100'>
-          Search
+          Find Tours
         </button>
       </form>
     </div>

@@ -1,5 +1,5 @@
 .card {
-    background-image: url('../../Assets/Images/sea2.jpg'); /* Ensure the path is correct */
+    background-image: url('../../Assets/Images/city-breaks-recommended-section-bg.jpg'); /* Ensure the path is correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,13 +26,13 @@
     font-weight: bold;
     margin-bottom: 15px;
     margin-top: 10px;
-    color: rgb(12, 148, 165);
+    color: rgb(255, 255, 255);
 }
 
 .text {
     font-size: 1rem;
     margin-bottom: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 254, 254);
 }
 
 

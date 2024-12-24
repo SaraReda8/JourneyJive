@@ -110,7 +110,7 @@ const NavBar = React.memo(() => {
                                         <NavDropdown.Item as={Link} to="/faqs" className={Style.megaMenuItem}>
                                             <FaQuestionCircle className={Style.icon} /> FAQs
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item as={Link} to="/BookingForm" className={Style.megaMenuItem}>
+                                        <NavDropdown.Item as={Link} to="/Booking" className={Style.megaMenuItem}>
                                             <FaIdCard className={Style.icon} /> Booking
                                         </NavDropdown.Item>
                                     </div>

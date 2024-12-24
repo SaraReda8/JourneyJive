@@ -9,8 +9,7 @@ import featuredImage from '../../Assets/Images/holiday-paris.jpg';
 import offersImage from '../../Assets/Images/Greece2.jpg';
 import tipsImage from '../../Assets/Images/destinations-hero-bg.jpg';
 import customerStoriesImage from '../../Assets/Images/destination-2.jpg';
-import image33 from '../../Assets/Images/africa2.jpg';
-import image34 from '../../Assets/Images/sunset2.jpg';
+
 import Discover from './../Discover/Discover';
 
 const Newsletter = () => {
@@ -91,32 +90,7 @@ const Newsletter = () => {
 
   return <>
     <Discover />
-<div className={styles.bookNow}>
-        <div className={styles.bookNowImage}>
-          <img
-            src={image33}
-            alt="Image 33"
-            className={`${styles.image} ${styles.animate}`}
-            loading="lazy"
-          />
-        </div>
-        <div className={styles.bookNowContent}>
-          <h1>   Embark on the journey of a lifetime!</h1>
-          <h2 className={styles.bold}> Travel across Africa, Asia, and Europe in one epic 3-week adventure.</h2>
-          <p className={styles.text}>
-        From the savannas of Kenya to the bustling streets of Tokyo, and the historic charm of Rome, you’ll experience it all in one seamless trip!
-          </p>
-          <button className={styles.bookNowButton}>Book Now</button>
-        </div>
-        <div className={styles.bookNowImage}>
-          <img
-            src={image34}
-            alt="Image 34"
-            className={`${styles.image} ${styles.animate}`}
-            loading="lazy"
-          />
-        </div>
-      </div> 
+
   <div className={styles.container}>
       <h1 className={styles.title}>Newsletter</h1>
 

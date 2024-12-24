@@ -8,13 +8,13 @@ import './Holidays.css';
 import EveryoneHolidays from '../../components/EveryoneHolidays/EveryoneHolidays';
 // import RecentHolidays from '../../components/RecentHolidays/RecentHolidays';
 import PlanYourHoliday from '../../components/PlanYourHoliday/PlanYourHoliday';
-import RecommendationSection from '../../components/RecommendationSection/RecommendationSection';
+import Embark from './../../components/Embark/Embark';
 
 function Holidays() {
     return (
         <div className='holidays-page'>
+            <Embark/>
 
-`            <RecommendationSection/>
             <EveryoneHolidays />
             <PlanYourHoliday/>
 

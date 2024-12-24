@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import styles from './Discover.module.css';
 import christmasMarket from '../../Assets/Images/christmas2.jpg';
 import snowyVillage from '../../Assets/Images/snowy-village.jpg';
-import festiveLights from '../../Assets/Images/festive-lights.jpg';
+import festiveLights from '../../Assets/Images/s1.png';
 
 export default function Discover() {
   const imageVariants = {

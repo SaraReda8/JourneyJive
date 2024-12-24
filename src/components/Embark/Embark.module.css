@@ -1,0 +1,87 @@
+
+
+.image {
+    width: 90%;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .bookNow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin: 20px;
+  
+  }
+  
+  .bookNowImage {
+    display: none;
+  }
+  
+  .bookNowContent {
+    text-align: center;
+  }
+  
+  .bookNowButton {
+    background: transparent;
+    border: 2px solid #333;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .bookNowButton:hover {
+    background: #333;
+    color: #fff;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .bookNowImage {
+      display: block;
+    }
+  }
+  .RecommendationSection {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh; /* Set height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.3;
+    color: rgb(10, 10, 10);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 1.3rem; /* Further adjust font size for very small screens */
+    }
+}
+  

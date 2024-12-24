@@ -4,7 +4,9 @@ import TopDestinations from '../../components/TopDestinations/TopDestinations';
 import Plane from './../../components/Plane/Plane';
 import Reviews from './../../components/Reviews/Reviews';
 import { Container, Row, Col,  } from "react-bootstrap";
+
 import styles from './Home.module.css'
+import Popular from './../../components/Popular/Popular';
 export default function Home(){
   var settings = {
     dots: false,
@@ -76,7 +78,7 @@ export default function Home(){
       </Col>
       <Col md="4" className="text-center mt-3 mt-md-0">
         <a
-          href="tel:6398312365"
+          href="./Form"
           className={`${styles.secondaryBtn} bounce`}
           rel="no"
           >
@@ -89,6 +91,7 @@ export default function Home(){
 </section>
 
 
+<Popular/>
     <Reviews/>
           <SearchSection/>
     
