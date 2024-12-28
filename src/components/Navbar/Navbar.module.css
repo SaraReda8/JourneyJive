@@ -1,113 +1,62 @@
-/* General Navbar Styling */
 .navbar {
-  background-color: white; 
+  background-color: white;
   padding: 1rem 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-weight: bold;
 }
 
-/* Logo Styling */
 .logo {
-  width: 1.8rem;
+  width: 2rem;
   margin-right: 0.5rem;
-  transform: rotate(45deg);
-}
-
-/* Brand Styling */
-.brand {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
 }
 
 .brandName {
   font-family: 'Brush Script MT', cursive;
-  font-size: 1.9rem;
-  color: var(--dark-color);
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s;
 }
 
 .brandName:hover {
   color: var(--sec-color);
 }
 
-/* Nav Links Styling */
-.navLinks .navlink,
-.navDropdown .dropdown-item {
+.navLinks .navlink {
   font-size: 1rem;
   color: var(--dark-color);
-  text-decoration: none;
   margin: 0 0.5rem;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s;
 }
 
-.navLinks .navlink:hover,
-.navDropdown .dropdown-item:hover {
+.navLinks .navlink:hover {
   color: var(--sec-color);
 }
 
-/* Dropdown Menu Styling */
-.navDropdown .dropdown-menu,
-.mega-menu .dropdown-menu {
-  border: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 0; /* Remove default padding */
-  width: 300%; /* Full width */
-
-}
-/* Mega Menu Container */
-.mega-menu .dropdown-menu .row {
-  padding: 1rem; /* Add padding to the row */
+.mega-menu {
+  width: 900px;
 }
 
-/* Column Items */
+.megaMenuContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .megaMenuItem {
   display: flex;
   align-items: center;
-  padding: 0.5rem 1rem; /* Adjust padding for better spacing */
-  font-size: 0.7rem;
-  color: var(--dark-color);
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.icon {
-  margin-right: 0.5rem; /* Space between icon and text */
-  font-size: 1.2rem; /* Increase icon size */
+  font-size: 0.9rem;
+  transition: background 0.3s;
 }
 
 .megaMenuItem:hover {
-  background: var(--light-gray);
-  color: var(--sec-color);
-}
-/* Mega Menu Container */
-.mega-menu .dropdown-menu {
-  width: 900px; /* Adjusted width for better alignment */
-  padding: 1rem; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: none;
-}
-
-/* Column Styling */
-.mega-menu .col-lg-4 {
-  display: flex;
-  flex-direction: column; /* Ensures items stack vertically */
-  gap: 0.8rem; /* Adds spacing between items */
-}
-
-/* Link Styling */
-.megaMenuItem {
-  display: flex;
-  align-items: center;
-  font-size: 0.9rem; 
-  padding: 0.5rem;
-  text-decoration: none;
-  color: var(--dark-color);
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.megaMenuItem:hover {
-  background-color: var(--light-gray);
-  color: var(--sec-color);
+  background-color: var(--bg-color);
 }
 
 .icon {
@@ -115,33 +64,12 @@
   font-size: 1.2rem;
 }
 
-
-
-/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .navLinks {
-    text-align: center;
+  .mega-menu {
+    width: 100%;
   }
 
-  .mega-menu .megaMenuContent {
-    grid-template-columns: 1fr; /* Single column layout on small screens */
-  }
-
-  .mega-menu .dropdown-menu {
-    padding: 1rem; /* Add padding for mobile */
-  }
-
-  .megaMenuItem {
-    font-size: 0.8rem; /* Smaller font size on mobile */
-  }
-}
-
-@media (max-width: 576px) {
-  .brandName {
-    font-size: 1.5rem;
-  }
-
-  .navLinks .navlink {
-    font-size: 0.9rem;
+  .megaMenuContainer {
+    flex-direction: column;
   }
 }

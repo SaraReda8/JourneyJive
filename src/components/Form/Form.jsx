@@ -64,7 +64,7 @@ export default function ContactUs() {
           <ErrorMessage name="message" component="div" className="text-danger" />
         </Form.Group>
 
-        <Button className='btn2 w-100'>Send a Message</Button>
+        <Button className="btn2 w-100">Send a Message</Button>
       </FormikForm>
     </Formik>
   </div>

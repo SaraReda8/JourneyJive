@@ -18,28 +18,39 @@ const guides = [
   { id: 5, name: 'Eleanor Pena', role: 'Guide', image: guide5 },
   { id: 6, name: 'Yahia Ehab', role: 'Guide', image: guide6 },
 ];
+
 export default function TourGuide() {
-  return <>  
-  <Breadcrumbs title="Meet Our Excellent Guide’s" pagename="Tour Guide's " />
-    <div className={styles.tourGuideContainer}>
-
-  <div className={styles.cardsContainer}>
-  {guides.map((guide) => (
-    <div key={guide.id} className={styles.card}>
-      <img src={guide.image} alt={`Image of ${guide.name}`} loading="lazy" className={styles.cardImage} />
-      <div className={styles.cardInfo}>
-        <h3>{guide.name}</h3>
-        <p>{guide.role}</p>
+  return (
+    <>
+      <Breadcrumbs title="Meet Our Excellent Guide’s" pagename="Tour Guide's" />
+      <div className={styles.tourGuideContainer}>
+        <div className={styles.cardsContainer}>
+          {guides.map((guide, index) => (
+            <div
+              key={guide.id}
+              className={styles.card}
+              style={{ '--order': index }}
+            >
+              <img
+                src={guide.image}
+                alt={`Image of ${guide.name}`}
+                loading="lazy"
+                className={styles.cardImage}
+              />
+              <div className={styles.cardInfo}>
+                <h3>{guide.name}</h3>
+                <p>{guide.role}</p>
+              </div>
+              <div className={styles.socialIcons}>
+                <i className="fab fa-facebook-f"></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-instagram"></i>
+                <i className="fab fa-pinterest"></i>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className={styles.socialIcons}>
-        <i className="fab fa-facebook-f"></i>
-        <i className="fab fa-twitter"></i>
-        <i className="fab fa-instagram"></i>
-        <i className="fab fa-pinterest"></i>
-      </div>
-    </div>
-  ))}
-</div>
-</div> </>
-
+    </>
+  );
 }

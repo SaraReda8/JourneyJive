@@ -16,32 +16,48 @@ export default function TopDestinations() {
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className={styles.carouselContainer}>
-      <h2>Explore Top Destinations</h2>
+      <h2 className={styles.heading}>Explore Top Destinations</h2>
       <Slider {...settings}>
         {topDestinations.map((destination) => (
           <div key={destination.id} className={styles.card}>
             <img
-              src={destination.image}
-              alt={destination.name}
+              src={destination.image || '/placeholder-image.jpg'}
+              alt={destination.name || 'Destination'}
               loading="lazy"
               className={styles.cardImage}
             />
-            <h3 className={styles.cardTitle}>{destination.name}</h3>
-            <p className={styles.info}>
-              {destination.places} Places | {destination.hotels} Hotels
-            </p>
-            <div className={styles.stars}>
-              {Array(destination.stars)
-                .fill()
-                .map((_, i) => (
-                  <span key={i} className={styles.star}>
-                    &#9733;
-                  </span>
-                ))}
+            <div className={styles.cardContent}>
+              <h3 className={styles.cardTitle}>{destination.name}</h3>
+              <p className={styles.info}>
+                {destination.places} Places | {destination.hotels} Hotels
+              </p>
+              <div className={styles.stars} aria-label={`${destination.stars} stars`}>
+                {Array(destination.stars)
+                  .fill()
+                  .map((_, i) => (
+                    <span key={i} className={styles.star}>
+                      &#9733;
+                    </span>
+                  ))}
+              </div>
             </div>
           </div>
         ))}

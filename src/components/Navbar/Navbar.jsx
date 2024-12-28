@@ -49,71 +49,50 @@ const NavBar = React.memo(() => {
                         <Nav.Link as={Link} to="/About" className={Style.navlink}>About</Nav.Link>
 
                         <NavDropdown title="Pages" id="pages-dropdown" className={`${Style.navDropdown} mega-menu`}>
-                        <div className="container-fluid p-3 "> {/* Increased width */}
+                            <div className={`${Style.megaMenuContainer}`}>
+                                <div className={Style.column}>
+                                    <NavDropdown.Item as={Link} to="/About" className={Style.megaMenuItem}>
+                                        <FaInfoCircle className={Style.icon} /> About Us
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/Blog" className={Style.megaMenuItem}>
+                                        <FaBlog className={Style.icon} /> Blog
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/ContactUs" className={Style.megaMenuItem}>
+                                        <FaEnvelope className={Style.icon} /> Contact Us
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/Gallery" className={Style.megaMenuItem}>
+                                        <FaBook className={Style.icon} /> Gallery
+                                    </NavDropdown.Item>
+                                </div>
 
-<div className="row widthc">
+                                <div className={Style.column}>
+                                    <NavDropdown.Item as={Link} to="/Newsletter" className={Style.megaMenuItem}>
+                                        <FaNewspaper className={Style.icon} /> Newsletter
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/Support" className={Style.megaMenuItem}>
+                                        <FaLifeRing className={Style.icon} /> Support Center
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/TourGuide" className={Style.megaMenuItem}>
+                                        <FaHandshake className={Style.icon} /> Tour Guides
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/Feedback" className={Style.megaMenuItem}>
+                                        <FaCommentDots className={Style.icon} /> Feedback
+                                    </NavDropdown.Item>
+                                </div>
 
-{/* Column 1 */}
-
-<div className="col-lg-4 col-md-6 mb-4">
-
-<NavDropdown.Item as={Link} to="/About" className={Style.megaMenuItem}>
-
-<FaInfoCircle className={Style.icon} /> About Us
-
-</NavDropdown.Item>
-
-<NavDropdown.Item as={Link} to="/Blog" className={Style.megaMenuItem}>
-
-<FaBlog className={Style.icon} /> Blog
-
-</NavDropdown.Item>
-
-<NavDropdown.Item as={Link} to="/ContactUs" className={Style.megaMenuItem}>
-
-<FaEnvelope className={Style.icon} /> Contact Us
-
-</NavDropdown.Item>
-
-<NavDropdown.Item as={Link} to="/Gallery" className={Style.megaMenuItem}>
-
-<FaBook className={Style.icon} /> Gallery
-
-</NavDropdown.Item>
-
-</div>
-
-                                    {/* Column 2 */}
-                                    <div className="col-lg-4 col-md-6 mb-4">
-                                        <NavDropdown.Item as={Link} to="/Newsletter" className={Style.megaMenuItem}>
-                                            <FaNewspaper className={Style.icon} /> Newsletter
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Item as={Link} to="/ContactUs" className={Style.megaMenuItem}>
-                                            <FaLifeRing className={Style.icon} /> Support Center
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Item as={Link} to="/TourGuide" className={Style.megaMenuItem}>
-                                            <FaHandshake className={Style.icon} /> Tour Guides
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Item as={Link} to="/Feedback" className={Style.megaMenuItem}>
-                                            <FaCommentDots className={Style.icon} /> Feedback
-                                        </NavDropdown.Item>
-                                    </div>
-
-                                    {/* Column 3 */}
-                                    <div className="col-lg-4 col-md-6 mb-4">
-                                        <NavDropdown.Item as={Link} to="/Terms" className={Style.megaMenuItem}>
-                                            <FaFileAlt className={Style.icon} /> Terms
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Item as={Link} to="/PrivacyPolicy" className={Style.megaMenuItem}>
-                                            <FaShieldAlt className={Style.icon} /> Policy
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Item as={Link} to="/faqs" className={Style.megaMenuItem}>
-                                            <FaQuestionCircle className={Style.icon} /> FAQs
-                                        </NavDropdown.Item>
-                                        <NavDropdown.Item as={Link} to="/Booking" className={Style.megaMenuItem}>
-                                            <FaIdCard className={Style.icon} /> Booking
-                                        </NavDropdown.Item>
-                                    </div>
+                                <div className={Style.column}>
+                                    <NavDropdown.Item as={Link} to="/Terms" className={Style.megaMenuItem}>
+                                        <FaFileAlt className={Style.icon} /> Terms
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/PrivacyPolicy" className={Style.megaMenuItem}>
+                                        <FaShieldAlt className={Style.icon} /> Policy
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/FAQs" className={Style.megaMenuItem}>
+                                        <FaQuestionCircle className={Style.icon} /> FAQs
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/Booking" className={Style.megaMenuItem}>
+                                        <FaIdCard className={Style.icon} /> Booking
+                                    </NavDropdown.Item>
                                 </div>
                             </div>
                         </NavDropdown>

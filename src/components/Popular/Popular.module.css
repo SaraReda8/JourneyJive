@@ -1,47 +1,73 @@
 .container {
-    margin-top: 50px;
-    align-items: center;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.05); 
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.list {
+  padding-left: 1.5rem;
+  list-style-type: circle;
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.list li {
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+.list li:hover {
+  color: var(--sec-color); 
+}
+
+.seccolor {
+  color: var(--sec-color); 
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
   }
-  
+
   .image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; 
   }
-  
-  .image:hover {
-    transform: scale(1.05); /* Enlarges the image slightly */
-  }
-  
+
   .title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #333;
+    font-size: 1.8rem;
   }
-  
+
   .description {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #555;
-  }
-  
-  .list {
-    padding-left: 1.5rem;
-    list-style-type:circle;
-    color: #333;
     font-size: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
   }
-  
-  .list li {
-    cursor: pointer;
-    transition: color 0.4s ease;
+
+  .list {
+    font-size: 0.9rem;
+    padding-left: 0;
+    text-align: left;
   }
-  
-  .list li:hover {
-    color: var(--sec-color); /* Changes color on hover to secondary color */
-  }
-  
+
+}
