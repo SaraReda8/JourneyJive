@@ -5,7 +5,7 @@ export default function FavouriteSection() {
     return (
         <div className={styles.favouritesSection}>
             <div className='container'>
-                <h3 className='text-center text-uppercase fw-semibold mb-4 mb-sm-5'>Explore Your Favorites
+                <h3 className='title '>Explore Your Favorites
                 </h3>
                 <div className='row g-4'>
                     <div className='col-sm-6 col-lg-3'>

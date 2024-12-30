@@ -2,27 +2,27 @@ import React from 'react';
 import styles from './TourGuide.module.css';
 
 // Images (replace these with the actual paths to your imported images)
-import guide1 from '../../Assets/Images/client-4.jpg';
+import guide1 from '../../Assets/Images/guide5.jpg';
 import guide2 from '../../Assets/Images/guide2.jpg';
 import guide3 from '../../Assets/Images/guide3.jpg';
-import guide4 from '../../Assets/Images/client-3.jpg';
+import guide4 from '../../Assets/Images/guide4.jpg';
 import guide5 from '../../Assets/Images/client-2.jpg';
 import guide6 from '../../Assets/Images/client-1.jpg';
 import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
-
+import TOURG from'../../Assets/Images/babyblue2.jpg';
 const guides = [
-  { id: 1, name: 'Savannah Nguyen', role: 'Guide', image: guide1 },
-  { id: 2, name: 'Laila Alexander', role: 'Guide', image: guide2 },
+  { id: 1, name: 'lili Zoher', role: 'Guide', image: guide1 },
+  { id: 2, name: 'Ward Alexander', role: 'Guide', image: guide2 },
   { id: 3, name: 'Moog Reyad', role: 'Guide', image: guide3 },
-  { id: 4, name: 'Natliy Henry', role: 'Guide', image: guide4 },
-  { id: 5, name: 'Eleanor Pena', role: 'Guide', image: guide5 },
+  { id: 4, name: 'Mourad Mohamed', role: 'Guide', image: guide4 },
+  { id: 5, name: 'Ola Emam', role: 'Guide', image: guide5 },
   { id: 6, name: 'Yahia Ehab', role: 'Guide', image: guide6 },
 ];
 
 export default function TourGuide() {
   return (
     <>
-      <Breadcrumbs title="Meet Our Excellent Guide’s" pagename="Tour Guide's" />
+      <Breadcrumbs title="Meet Our Excellent Guide’s" pagename="Tour Guide's" bgImage={TOURG} />
       <div className={styles.tourGuideContainer}>
         <div className={styles.cardsContainer}>
           {guides.map((guide, index) => (

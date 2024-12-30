@@ -1,52 +1,112 @@
-
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
 
-/* Root variables for theming */
+/* Root Variables */
 :root {
     --main-color: #ff4838;
-  --sec-color:#4d8cd1;
+    --sec-color: #4d8cd1;
     --dark-color: #363636;
-    --hover-color: rgb(255, 141, 85);
+    --Gold-color: rgb(253, 214, 85);
     --font-family: 'Encode Sans Expanded', sans-serif;
     --light-color: white;
     --bg-color: #fffefe;
+    --beige-color: rgb(243, 228, 176);
     --card-shadow: rgba(0, 0, 0, 0.1);
     --card-hover-shadow: rgba(0, 0, 0, 0.3);
 }
 
+/* Global Styles */
 body {
-    font-family: var(--font-family) !important;
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
+    font-family: var(--font-family), 'Roboto', sans-serif;
+    background-color: var(--bg-color);
     margin: 0;
     padding: 0;
 }
 
+/* Buttons */
+.btn1, .btn2, .btn3 {
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
-/* Button Styling */
-/* Add !important for critical styles to override Bootstrap */
 .btn1 {
-  font-size: 16px;
-  font-weight: bold;
-  color: white !important;
-  background-color: var(--main-color) !important;
-  border: 2px solid var(--main-color) !important;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 12px 24px;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    font-size: 16px;
+    color: var(--light-color);
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    padding: 12px 24px;
 }
 
 .btn1:hover {
-  background-color: white !important;
-  color: var(--main-color) !important;
-  transform: scale(1.05) rotate(-1deg);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: var(--main-color);
+    background: var(--light-color);
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.btn2 {
+    background: rgba(38, 133, 235, 0.77);
+    color: var(--light-color);
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: none;
+}
 
+.btn2:hover {
+    background: #0a4584;
+}
 
+.btn3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 13px 20px;
+    border: 2px solid black;
+    background: transparent;
+    color: var(--light-color);
+    position: relative;
+}
+
+.btn3:after {
+    content: "";
+    background: var(--sec-color);
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    z-index: -1;
+}
+
+.btn3:hover:after {
+    top: 0;
+    left: 0;
+}
+
+@media (min-width: 768px) {
+    .btn3 {
+        padding: 13px 50px;
+    }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+}
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-line:  underline;
+    text-decoration-style:solid;
+    text-decoration-color: #4d8cd1;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+
+}
 .navlink {
     color: var(--dark-color);
     text-decoration: none;
@@ -54,88 +114,33 @@ body {
 }
 
 .navlink:hover {
-    color: var(--sec-color)!important;
+    color: var(--sec-color);
 }
-.text-main{
-  color: var(--main-color) !important;
+
+.text-main {
+    color: var(--main-color);
 }
-.text-main:hover{
-  color:black !important;
+.text-beige{
+    color: var(--beige-color);
 }
+.text-main:hover {
+    color: var(--dark-color);
+}
+
+/* Utility Classes */
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.widthc {
+    width: 450px;
+    height: auto;
+}
+
+.seccolor {
+    color: var(--sec-color);
+}
+
 .special {
-  font-family: 'Brush Script MT', cursive;
-
-}
-.btn2 {
-  background-color: #2685ebc5;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.btn2:hover {
-  background-color: #0a4584;
-}
-/* Button Styles: btn3 */
-.btn3 {
-  font-size: 16px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 20px 13px;
-  outline: 0;
-  border: 2px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  color: #ffffff;
-  font-weight: bold;
-  margin-top: 50px;
-}
-
-.btn3:after {
-  content: "";
-  background-color: var(--sec-color);
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
-}
-
-.btn3:hover:after {
-  top: 0px;
-  left: 0px;
-}
-
-@media (min-width: 768px) {
-  .btn3 {
-    padding: 13px 50px 13px;
-  }
-}
-
-h1, h2, h3, h4, h5, h6,.title {
-  font-family: 'Poppins', sans-serif;
-}
-.bg-main{
-  background-color: var(--main-color);
-}
-.widthc{
- width: 450px;
- height: auto;
-}
-.seccolor{
-  color: var(--sec-color);
+    font-family: 'Brush Script MT', cursive;
 }

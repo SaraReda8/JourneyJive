@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Gallery.module.css';
 
-// Import images
 import img1 from '../../Assets/Images/v1.jpg';
 import img2 from '../../Assets/Images/v2.jpg';
 import img3 from '../../Assets/Images/v3.jpg';
@@ -12,37 +11,48 @@ import img7 from '../../Assets/Images/v6.jpg';
 import img8 from '../../Assets/Images/v7.jpg';
 import img9 from '../../Assets/Images/turkey-holiday.jpg';
 import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
-
-
+import GalleryImage from '../../Assets/Images/img7.jpg';
 export default function Gallery() {
     const galleryImages = [
-      [img1, img2, img3, img4], // First row: 4 images
-      [img5, img6],            // Second row: 2 images
-      [img7, img8, img9],      // Third row: 3 images
+      [img1, img2, img3, img4], 
+      [img5, img6],            
+      [img7, img8, img9],      
     ];
-  
+
+    const locations = [
+      "Cairo, Egypt",
+      "Rome, Italy",
+      "Paris, France",
+      "Tokyo, Japan",
+      "Maldives",
+      "New York, USA",
+      "Sydney, Australia",
+      "Rio de Janeiro, Brazil",
+      "Istanbul, Turkey",
+    ];
+
     return (
       <>
-        {/* Background Section */}
-        <Breadcrumbs title="Gallery" pagename="Gallery" />
-
-  
-        {/* Gallery Section */}
+        <Breadcrumbs title="Gallery" pagename="Gallery" bgImage={GalleryImage} />
         <section className={styles.gallerySection}>
           {galleryImages.map((row, rowIndex) => (
             <div className={styles.gridRow} key={`row-${rowIndex}`}>
               {row.map((image, index) => (
-                <img
-                  key={index}
-                  src={image}
-                  alt={`Gallery image ${index + 1}`}
-                  loading="lazy"
-                  className={styles.galleryImage}
-                />
+                <div className={styles.imageContainer} key={index}>
+                  <img
+                    src={image}
+                    alt={`Gallery image ${rowIndex * 4 + index + 1}`}
+                    loading="lazy"
+                    className={styles.galleryImage}
+                  />
+                  <div className={styles.tooltip}>
+                    {locations[rowIndex * 4 + index]}
+                  </div>
+                </div>
               ))}
             </div>
           ))}
         </section>
       </>
     );
-  }
+}

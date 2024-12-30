@@ -92,6 +92,6 @@ export default function Home(){
 <Popular/>
     <Reviews/>
           <SearchSection/>
-    
+
     </>
 }

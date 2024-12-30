@@ -1,4 +1,3 @@
-// RecentHolidayCard.js
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -19,50 +18,42 @@ function RecentHolidayCard({
     itemRecommendedAge
 }) {
     return (
-        <div className={`col-lg-4 ${styles.cardWrapper} animate__animated animate__fadeInUp`}>
-            <Card className="shadow h-100 overflow-hidden">
-                {/* Image on Top */}
-                <Card.Img variant="top" src={itemImage} className={styles.img} alt={itemTitle} />
+        <div className={`container ${styles.cardWrapper} animate__animated animate__fadeInUp`}>
+            {/* Image Section */}
+            <div className={`col-12 col-md-6 ${styles.imageWrapper}`}>
+                <img src={itemImage} alt={itemTitle} className={styles.img} />
+            </div>
 
-                {/* Card Body with Features Below */}
-                <Card.Body className="p-4">
-                    <Card.Title className="text-center fw-bold">{itemTitle}</Card.Title>
-                    <ul className="list-unstyled">
-                        <li><strong>Description:</strong> {itemDescription}</li>
-                        <li><strong>Nights:</strong> {itemNights}</li>
-                        <li className="price ">
-                            <strong>Price:</strong> <span >{itemPrice}</span> pp
-                        </li>
-                        <li className="rating">
-                            <strong>Rating:</strong> {itemRating} ⭐
-                        </li>
-                        <li className="availability">
-                            <strong>Availability:</strong> {itemAvailability}
-                        </li>
-                        <li className="amenities">
-                            <strong>Amenities:</strong>
-                            <ul>
+            {/* Content Section */}
+            <div className="col-12 col-md-6 d-flex flex-column">
+                <Card.Body className={`p-3 ${styles.cardBody}`}>
+                    <Card.Title className={`text-center fw-bold ${styles.title}`}>
+                        {itemTitle}
+                    </Card.Title>
+                    <p className={styles.description}>{itemDescription}</p>
+                    <ul className={`list-unstyled ${styles.featuresList}`}>
+    <li><strong>Nights:</strong> {itemNights}</li>
+    <li> <strong>Price:</strong> {itemPrice} pp </li>
+    <li> <strong>Rating:</strong> {itemRating} ⭐ </li>
+    <li><strong>Availability:</strong> {itemAvailability}</li>
+    <li><strong>Location:</strong> {itemLocation}</li>
+    <li><strong>Discount:</strong> {itemDiscount}</li>
+    <li><strong>Cancellation Policy:</strong> {itemCancellation}</li>
+    <li><strong>Recommended Age:</strong> {itemRecommendedAge}</li>
+
+
+                        <li><strong>Amenities:</strong>
+                            <ul className={styles.amenitiesList}>
                                 {itemAmenities.map((amenity, index) => (
                                     <li key={index}>{amenity}</li>
                                 ))}
                             </ul>
                         </li>
-                        <li className="location">
-                            <strong>Location:</strong> {itemLocation}
-                        </li>
-                        <li className="discount">
-                            <strong>Discount:</strong> {itemDiscount}
-                        </li>
-                        <li className="cancellation">
-                            <strong>Cancellation Policy:</strong> {itemCancellation}
-                        </li>
-                        <li className="recommendedAge">
-                            <strong>Recommended Age:</strong> {itemRecommendedAge}
-                        </li>
                     </ul>
-                    <Button className='btn1'>View Now</Button>
+                    <button type="submit" className='btn2 w-100'>
+                    View Now</button>
                 </Card.Body>
-            </Card>
+            </div>
         </div>
     );
 }

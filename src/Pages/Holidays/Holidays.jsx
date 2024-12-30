@@ -7,7 +7,6 @@ import './Holidays.css';
 // import RecommendedSection from '../../Components/RecommendedSection/RecommendedSection';
 import EveryoneHolidays from '../../components/EveryoneHolidays/EveryoneHolidays';
 // import RecentHolidays from '../../components/RecentHolidays/RecentHolidays';
-import PlanYourHoliday from '../../components/PlanYourHoliday/PlanYourHoliday';
 import Embark from './../../components/Embark/Embark';
 
 function Holidays() {
@@ -16,7 +15,6 @@ function Holidays() {
             <Embark/>
 
             <EveryoneHolidays />
-            <PlanYourHoliday/>
 
 `
 
