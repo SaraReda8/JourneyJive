@@ -41,7 +41,6 @@ function EveryoneHolidays() {
               itemSubTitle={item.itemSubTitle}
               itemPrice={item.itemPrice}
               image={images[index]}
-              lazy={true}
             />
           ))}
         </div>
@@ -55,5 +54,6 @@ function EveryoneHolidays() {
     </div>
   );
 }
+
 
 export default EveryoneHolidays;

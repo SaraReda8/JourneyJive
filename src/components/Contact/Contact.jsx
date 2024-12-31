@@ -4,14 +4,14 @@ import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";
 import Form from '../Form/Form';
 import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
-
+import bgContact from '../../../src/Assets/Images/bg.jpg';
 export default function ContactUs() {
   
 
   return (
     <>
       {/* Header Section */}
-      <Breadcrumbs title="Contact Us" pagename="Contact Us" />
+      <Breadcrumbs title="Contact Us" pagename="Contact Us" bgImage={bgContact} />
 
       {/* Main Container */}
       <div className={`container ${styles.container}`}>

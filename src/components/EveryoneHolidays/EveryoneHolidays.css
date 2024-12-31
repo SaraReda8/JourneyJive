@@ -78,3 +78,19 @@
         font-size: 0.9rem;
     }
 }
+@media (max-width: 768px) {
+  .image-div {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-div {
+    height: 250px;
+
+  }
+
+  .advertisement-section {
+    font-size: 0.7rem;
+  }
+}

@@ -63,6 +63,12 @@
   margin-right: 0.5rem;
   font-size: 1.2rem;
 }
+.navlink.active,
+.megaMenuItem.active {
+  color: var(--sec-color) !important;
+  text-decoration: underline;
+}
+
 
 @media (max-width: 768px) {
   .mega-menu {

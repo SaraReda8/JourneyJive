@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './PlanYourHoliday.module.css'; // Import the CSS module
+import styles from './PlanYourHoliday.module.css'; 
 
 export default function PlanYourHoliday() {
     return (

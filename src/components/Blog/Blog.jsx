@@ -4,7 +4,7 @@ import about1 from '../../Assets/Images/blog1.jpg';
 import about2 from '../../Assets/Images/blog2.jpg';
 import about3 from '../../Assets/Images/blog3.jpg';
 import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
-import BlogImage from '../../Assets/Images/black.jpg';
+import BlogImage from '../../Assets/Images/1.jpg';
 export default function Blog() {
   const [showMore, setShowMore] = useState(false);
 
@@ -74,6 +74,8 @@ export default function Blog() {
           </button>
         </div>
       </div>
+      
+      
 
       
     </>

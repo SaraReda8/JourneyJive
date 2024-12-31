@@ -4,7 +4,7 @@ import CityBreakCard from '../../components/CityBreakCard/CityBreakCard';
 import Container from 'react-bootstrap/Container';
 import styles from './CityBreaks.module.css';
 import Breadcrumbs from './../../components/Breadcrumbs/Breadcrumbs';
-
+import bghotel from '../../../src/Assets/Images/1.jpg'
 export default function CityBreaks() {
   const [selectedCity, setSelectedCity] = useState('london');
 
@@ -15,7 +15,7 @@ export default function CityBreaks() {
   return (
     <div className={styles.cityBreaks}>
       {/* Intro Image */}
-      <Breadcrumbs title="Hotels" pagename="Hotels" />
+      <Breadcrumbs title="Hotels" pagename="Hotels" bgImage={bghotel} />
 
 
       <Container>

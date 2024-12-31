@@ -5,10 +5,8 @@ import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";
 
 
-// Import the logo properly
 import Logo from "../../Assets/Images/header.png";
 
-// Import payment icons
 import Visa from "../../Assets/Images/Visa.jpg";
 import MasterCard from "../../Assets/Images/MasterCard.jpg";
 import PayPal from "../../Assets/Images/PayPal.jpg";
@@ -52,8 +50,23 @@ export default function Footer() {
         <h5 className={`${styles.title} text mb-4`}>Information</h5>
         <ul className="list-unstyled">
           <li>
-            <Link to="/About" className={styles.animatedLink}>
+          <Link to="/Newsletter" className={styles.animatedLink}>
+              New
+            </Link>     
+          </li>
+          <li>   
+                <Link to="/About" className={styles.animatedLink}>
               About Company
+            </Link></li>
+ 
+          <li>
+            <Link to="/FAQs" className={styles.animatedLink}>
+            FAQs
+            </Link>
+          </li>
+          <li>
+            <Link to="/Blog" className={styles.animatedLink}>
+              Blogs
             </Link>
           </li>
           <li>
@@ -61,20 +74,9 @@ export default function Footer() {
               Contact Channels
             </Link>
           </li>
-          <li>
-            <Link to="/faq" className={styles.animatedLink}>
-              Online Query
-            </Link>
-          </li>
-          <li>
-            <Link to="/ContactUs" className={styles.animatedLink}>
-              Help & Support
-            </Link>
-          </li>
         </ul>
       </div>
 
-      {/* Destinations */}
 
 
       {/* Reach Us */}

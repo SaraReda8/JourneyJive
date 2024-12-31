@@ -9,7 +9,7 @@ import guide4 from '../../Assets/Images/guide4.jpg';
 import guide5 from '../../Assets/Images/client-2.jpg';
 import guide6 from '../../Assets/Images/client-1.jpg';
 import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
-import TOURG from'../../Assets/Images/babyblue2.jpg';
+import TOURG from'../../Assets/Images/1.jpg';
 const guides = [
   { id: 1, name: 'lili Zoher', role: 'Guide', image: guide1 },
   { id: 2, name: 'Ward Alexander', role: 'Guide', image: guide2 },
@@ -33,7 +33,7 @@ export default function TourGuide() {
             >
               <img
                 src={guide.image}
-                alt={`Image of ${guide.name}`}
+                alt={`Tour guide named ${guide.name}`}
                 loading="lazy"
                 className={styles.cardImage}
               />

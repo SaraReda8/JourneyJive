@@ -11,7 +11,7 @@ import img7 from '../../Assets/Images/v6.jpg';
 import img8 from '../../Assets/Images/v7.jpg';
 import img9 from '../../Assets/Images/turkey-holiday.jpg';
 import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
-import GalleryImage from '../../Assets/Images/img7.jpg';
+import GalleryImage from '../../Assets/Images/Gallery.png';
 export default function Gallery() {
     const galleryImages = [
       [img1, img2, img3, img4], 
@@ -33,7 +33,7 @@ export default function Gallery() {
 
     return (
       <>
-        <Breadcrumbs title="Gallery" pagename="Gallery" bgImage={GalleryImage} />
+        <Breadcrumbs pagename="Gallery" bgImage={GalleryImage} />
         <section className={styles.gallerySection}>
           {galleryImages.map((row, rowIndex) => (
             <div className={styles.gridRow} key={`row-${rowIndex}`}>
@@ -41,10 +41,9 @@ export default function Gallery() {
                 <div className={styles.imageContainer} key={index}>
                   <img
                     src={image}
-                    alt={`Gallery image ${rowIndex * 4 + index + 1}`}
+                    alt={`Gallery item ${rowIndex * 4 + index + 1}`}
                     loading="lazy"
-                    className={styles.galleryImage}
-                  />
+                    className={styles.galleryImage}  />
                   <div className={styles.tooltip}>
                     {locations[rowIndex * 4 + index]}
                   </div>

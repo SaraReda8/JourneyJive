@@ -7,7 +7,6 @@ import icons1 from "../../Assets/Images/destination.png";
 import icons2 from "../../Assets/Images/best-price.png";
 import icons3 from "../../Assets/Images/quick.png";
 import Awards from "../../components/Awards/Awards";
-import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import styles from "./About.module.css";
 import about from '../../Assets/Images/aboutus.jpg';
 
@@ -52,7 +51,6 @@ const About = () => {
 
   return (
     <>
-      <Breadcrumbs title="About Us" pagename="About Us" />
       <section className="py-5">
         <Container>
         <Row>

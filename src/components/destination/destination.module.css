@@ -18,11 +18,10 @@
     margin-bottom: 2rem;
 }
 
-/* Center the grid */
 .grid {
     display: grid;
     gap: 0; /* No grid gap */
-    grid-template-columns: repeat(12, 1fr); /* 12-column grid layout */
+    grid-template-columns: repeat(12, 1fr); 
     justify-content: center;
     width: 100%;
     max-width: 1200px; 
@@ -52,7 +51,6 @@
     transform: scale(1.1);
 }
 
-/* Overlay content */
 .overlay {
     position: absolute;
     bottom: 1rem;
@@ -65,7 +63,6 @@
     font-size: 1.25rem;
 }
 
-/* Title text */
 .text {
     font-size: 1.5rem;
     font-weight: bold;
@@ -73,7 +70,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* Hours badge - initially hidden, appears on hover */
 .hoursBadge {
     background-color: var(--sec-color);
     color: white;
@@ -89,7 +85,6 @@
     
 }
 
-/* Specific column spans for the first row */
 .card1 {
     grid-column: span 3;
 }
@@ -102,19 +97,17 @@
     grid-column: span 3;
 }
 
-/* Specific column spans for the second row */
 .card4, .card5 {
     grid-column: span 6;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .card {
-        height: 150px;
+        height: 220px;
     }
 
     .title {

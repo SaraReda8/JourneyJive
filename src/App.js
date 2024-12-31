@@ -22,13 +22,12 @@ import Faq from './components/Faq/Faq';
 import Newsletter from './components/Newsletter/Newsletter';
 import BaseForm from './components/Form/Form';
 import Booking from './components/Booking/Booking';
-// Define the routes
 const routers = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     children: [
-      { path: 'Home', element: <Home /> },
+      {index:true , element: <Home /> },
       { path: '*', element: <NotFound /> },
       { path: 'about', element: <About /> },
       { path: 'terms', element: <TermOfServices /> },
