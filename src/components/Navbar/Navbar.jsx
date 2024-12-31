@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import AirplaneLogo from '../../Assets/Icons/airplane.svg';
-import {  FaUmbrellaBeach, FaInfoCircle,  FaBlog, FaEnvelope, FaBook, FaNewspaper,  FaFileAlt, FaShieldAlt,
+import {  FaUmbrellaBeach, FaInfoCircle,  FaBlog,FaBook, FaNewspaper,  FaFileAlt, FaShieldAlt,
  FaQuestionCircle, FaIdCard, FaHandshake, FaCommentDots} from 'react-icons/fa';
 import Style from './Navbar.module.css';
+
 const NavBar = React.memo(() => {
     const [activeLink, setActiveLink] = useState('/'); 
     const handleLinkClick = (link) => {
@@ -69,11 +70,11 @@ const NavBar = React.memo(() => {
                         </Nav.Link>
                         <Nav.Link 
                             as={Link} 
-                            to="/About" 
-                            className={`${Style.navlink} ${activeLink === '/About' ? Style.active : ''}`}
-                            onClick={() => handleLinkClick('/About')}
+                            to="/ContactUs" 
+                            className={`${Style.navlink} ${activeLink === '/ContactUs' ? Style.active : ''}`}
+                            onClick={() => handleLinkClick('/ContactUs')}
                         >
-                            About
+                         ContactUs
                         </Nav.Link>
 
                         <NavDropdown title="Pages" id="pages-dropdown" className={`${Style.navDropdown} mega-menu`}>
@@ -95,14 +96,7 @@ const NavBar = React.memo(() => {
                                     >
                                         <FaBlog className={Style.icon} /> Blog
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item 
-                                        as={Link} 
-                                        to="/ContactUs" 
-                                        className={`${Style.megaMenuItem} ${activeLink === '/ContactUs' ? Style.active : ''}`}
-                                        onClick={() => handleLinkClick('/ContactUs')}
-                                    >
-                                        <FaEnvelope className={Style.icon} /> Contact Us
-                                    </NavDropdown.Item>
+                              
                                     <NavDropdown.Item 
                                         as={Link} 
                                         to="/Gallery" 
@@ -111,9 +105,6 @@ const NavBar = React.memo(() => {
                                     >
                                         <FaBook className={Style.icon} /> Gallery
                                     </NavDropdown.Item>
-                                </div>
-
-                                <div className={Style.column}>
                                     <NavDropdown.Item 
                                         as={Link} 
                                         to="/Newsletter" 
@@ -122,6 +113,10 @@ const NavBar = React.memo(() => {
                                     >
                                         <FaNewspaper className={Style.icon} /> Newsletter
                                     </NavDropdown.Item>
+                                </div>
+
+                                <div className={Style.column}>
+
                                     <NavDropdown.Item 
                                         as={Link} 
                                         to="/TourGuide" 
@@ -146,6 +141,14 @@ const NavBar = React.memo(() => {
                                     >
                                         <FaIdCard className={Style.icon} /> Booking
                                     </NavDropdown.Item>
+                                    <NavDropdown.Item 
+                                        as={Link} 
+                                        to="/FAQs" 
+                                        className={`${Style.megaMenuItem} ${activeLink === '/FAQs' ? Style.active : ''}`}
+                                        onClick={() => handleLinkClick('/FAQs')}
+                                    >
+                                        <FaQuestionCircle className={Style.icon} /> FAQs
+                                    </NavDropdown.Item>
                                 </div>
 
                                 <div className={Style.column}>
@@ -165,14 +168,7 @@ const NavBar = React.memo(() => {
                                     >
                                         <FaShieldAlt className={Style.icon} /> Policy
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item 
-                                        as={Link} 
-                                        to="/FAQs" 
-                                        className={`${Style.megaMenuItem} ${activeLink === '/FAQs' ? Style.active : ''}`}
-                                        onClick={() => handleLinkClick('/FAQs')}
-                                    >
-                                        <FaQuestionCircle className={Style.icon} /> FAQs
-                                    </NavDropdown.Item>
+
                                 </div>
                             </div>
                         </NavDropdown>
