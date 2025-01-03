@@ -10,8 +10,8 @@ import img6 from '../../Assets/Images/v5.jpg';
 import img7 from '../../Assets/Images/v6.jpg';
 import img8 from '../../Assets/Images/v7.jpg';
 import img9 from '../../Assets/Images/turkey-holiday.jpg';
-import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
-import GalleryImage from '../../Assets/Images/Gallery.png';
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
+import GalleryImage from '../../Assets/Images/1.jpg';
 export default function Gallery() {
     const galleryImages = [
       [img1, img2, img3, img4], 
@@ -33,7 +33,7 @@ export default function Gallery() {
 
     return (
       <>
-        <Breadcrumbs pagename="Gallery" bgImage={GalleryImage} />
+        <Breadcrumbs pagename="Gallery" title='Discover the World Through Our Lens' bgImage={GalleryImage} />
         <section className={styles.gallerySection}>
           {galleryImages.map((row, rowIndex) => (
             <div className={styles.gridRow} key={`row-${rowIndex}`}>

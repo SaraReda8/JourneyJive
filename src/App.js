@@ -1,27 +1,28 @@
 import React from 'react';
 import './App.css';
 import Layout from './components/Layout/Layout';
-import NotFound from './components/NotFound/NotFound';
+import NotFound from './Pages/NotFound/NotFound.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Holidays from './Pages/Holidays/Holidays';
-import TermOfServices from './components/TermOfService/TermOfService';
+import TermOfServices from './Pages/TermOfService/TermOfService.jsx';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import CityBreaks from './Pages/CityBreaks/CityBreaks';
-import Gallery from './components/Gallery/Gallery';
+import Gallery from './Pages/Gallery/Gallery.jsx';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TourGuide from './components/TourGuide/TourGuide';
+import TourGuide from './Pages/TourGuide/TourGuide.jsx';
 import Destinations from './Pages/Destinations/Destinations';
 import HolidayDetails from './Pages/Holidays/HolidayDetails.jsx';
-import Contact from './components/Contact/Contact';
-import PrivacyPolicyy from './components/PrivacyPolicyy/PrivacyPolicyy';
-import Feedback from './components/Feedback/Feedback';
-import Blog from './components/Blog/Blog';
-import Faq from './components/Faq/Faq';
-import Newsletter from './components/Newsletter/Newsletter';
+import Contact from './Pages/Contact/Contact.jsx';
+import PrivacyPolicyy from './Pages/PrivacyPolicyy/PrivacyPolicyy.jsx';
+import Feedback from './Pages/Feedback/Feedback.jsx';
+import Blog from './Pages/Blog/Blog.jsx';
+import Faq from './Pages/Faq/Faq.jsx';
+
 import BaseForm from './components/Form/Form';
-import Booking from './components/Booking/Booking';
+import Booking from './Pages/Booking/Booking.jsx';
+import Newsletter from './Pages/Newsletter/Newsletter';
 const routers = createBrowserRouter([
   {
     path: '/',

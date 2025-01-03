@@ -88,7 +88,7 @@ export default function Footer() {
               <div className={styles.iconCircle}>
                 <HiOutlinePhone />
               </div>
-              <span>+880 176 1111 456</span>
+              <span>+011 868 8888 3063</span>
             </div>
           </li>
           <li>
@@ -96,7 +96,7 @@ export default function Footer() {
               <div className={styles.iconCircle}>
                 <HiOutlineMail />
               </div>
-              <span>info@example.com</span>
+              <span>JourneyJive@example.com</span>
             </div>
           </li>
           <li>
@@ -104,7 +104,7 @@ export default function Footer() {
               <div className={styles.iconCircle}>
                 <MdLocationOn />
               </div>
-              <span>168/170, Avenue 01, Mirpur DOHS, Bangladesh</span>
+              <span>Add: 88 Tahrir Square, Downtown, Cairo, Egypt</span>
             </div>
           </li>
         </ul>

@@ -1,7 +1,7 @@
 import { React } from 'react';
-import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
-import Reviews from './../Reviews/Reviews';
-import Awards from './../Awards/Awards';
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
+import Reviews from '../../components/Reviews/Reviews';
+import Awards from '../../components/Awards/Awards';
 import bgFeed from '../../Assets/Images/bg.jpg'
 
 export default function Feedback(){

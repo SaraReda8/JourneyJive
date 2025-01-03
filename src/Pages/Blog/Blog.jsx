@@ -3,7 +3,7 @@ import styles from './Blog.module.css';
 import about1 from '../../Assets/Images/blog1.jpg';
 import about2 from '../../Assets/Images/blog2.jpg';
 import about3 from '../../Assets/Images/blog3.jpg';
-import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import BlogImage from '../../Assets/Images/1.jpg';
 export default function Blog() {
   const [showMore, setShowMore] = useState(false);
@@ -14,7 +14,7 @@ export default function Blog() {
 
   return (
     <>
-      <Breadcrumbs title="Blog" pagename="Blog"  bgImage={BlogImage}/>
+      <Breadcrumbs title="The Ultimate Travel Blog for Every Wanderlust Soul" pagename="Blog"  bgImage={BlogImage}/>
       <div className={`row ${styles.borderSection}`}>
         <div className="col-md-6 d-flex justify-content-center mt-3">
           <img src={about3} alt="Culture" loading="lazy" className={`${styles.aboutImg} ${styles.imgAnimation}`} />

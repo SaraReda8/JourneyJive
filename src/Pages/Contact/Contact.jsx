@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./Contact.module.css";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";
-import Form from '../Form/Form';
-import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
+import Form from '../../components/Form/Form';
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import bgContact from '../../../src/Assets/Images/bg.jpg';
-import Map from './../Map/Map';
+import Map from '../../components/Map/Map';
 export default function ContactUs() {
   
 

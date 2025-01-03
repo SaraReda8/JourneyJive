@@ -8,7 +8,7 @@ import guide3 from '../../Assets/Images/guide3.jpg';
 import guide4 from '../../Assets/Images/guide4.jpg';
 import guide5 from '../../Assets/Images/client-2.jpg';
 import guide6 from '../../Assets/Images/client-1.jpg';
-import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import TOURG from'../../Assets/Images/1.jpg';
 const guides = [
   { id: 1, name: 'lili Zoher', role: 'Guide', image: guide1 },
