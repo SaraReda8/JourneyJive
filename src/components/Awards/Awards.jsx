@@ -25,19 +25,13 @@ const Awards = () => {
       },
     ];
   
-    const Heading = ({ title, subtitle }) => {
-      return (
-        <div className='heading'>
-          <h1>{title}</h1>
-          <p>{subtitle}</p>
-        </div>
-      );
-    };
+
   
     return (
       <section className={styles.awards}>
         <div className={styles.container}>
-          <Heading title="Over 1,24,000+ Happy Users Being With Us Still They Love Our Services" subtitle="Our Awards"  className="text-dark"/>
+          <h1>Over 1,24,000+ Happy Users Being With Us Still They Love Our Services</h1>
+          <p className="seccolor" >Our Awards</p>
   
           <div className={`${styles.content} ${styles.grid4} ${styles.mtop}`}>
             {awards.map((val, index) => (
@@ -45,7 +39,7 @@ const Awards = () => {
                 <div className={styles.icon}>
                   <span>{val.icon}</span>
                 </div>
-                <h1>{val.num}</h1>
+                <h2>{val.num}</h2>
                 <p>{val.name}</p>
               </div>
             ))}

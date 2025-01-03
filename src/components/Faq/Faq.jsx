@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from './faq.module.css';
+import { motion } from 'framer-motion';
 
 export default function Faq() {
   const faqs = [
@@ -54,8 +55,14 @@ export default function Faq() {
       <Row>
         {faqs.map((faq, index) => (
           <Col key={index} md={6} className={styles.faqItem}>
-            <h4 className={styles.question}>{index + 1}. {faq.question}</h4>
-            <p className={styles.answer}>{faq.answer}</p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+            >
+              <h4 className={styles.question}>{index + 1}. {faq.question}</h4>
+              <p className={styles.answer}>{faq.answer}</p>
+            </motion.div>
           </Col>
         ))}
       </Row>

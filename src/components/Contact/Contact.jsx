@@ -5,6 +5,7 @@ import { MdLocationOn } from "react-icons/md";
 import Form from '../Form/Form';
 import Breadcrumbs from './../Breadcrumbs/Breadcrumbs';
 import bgContact from '../../../src/Assets/Images/bg.jpg';
+import Map from './../Map/Map';
 export default function ContactUs() {
   
 
@@ -74,6 +75,7 @@ export default function ContactUs() {
         </div>
       </div>
       <Form/>
+      <Map/>
 
 
     </>

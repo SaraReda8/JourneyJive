@@ -6,6 +6,8 @@
     --main-color: #ff4838;
     --sec-color: #4d8cd1;
     --dark-color: #363636;
+    --gray-color:#777777dc;
+    --darkgray-color:#555555;
     --Gold-color: rgb(253, 214, 85);
     --font-family: 'Encode Sans Expanded', sans-serif;
     --light-color: white;
@@ -95,6 +97,7 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6{
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
 }
 .title {
     font-family: 'Poppins', sans-serif;
