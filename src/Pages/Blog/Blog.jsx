@@ -1,10 +1,10 @@
 import { React, useState } from 'react';
 import styles from './Blog.module.css';
-import about1 from '../../Assets/Images/blog1.jpg';
-import about2 from '../../Assets/Images/blog2.jpg';
-import about3 from '../../Assets/Images/blog3.jpg';
+import about1 from '../../Assets/Images/blog1.webp';
+import about2 from '../../Assets/Images/blog2.webp';
+import about3 from '../../Assets/Images/blog3.webp';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
-import BlogImage from '../../Assets/Images/1.jpg';
+import BlogImage from '../../Assets/Images/1.webp';
 export default function Blog() {
   const [showMore, setShowMore] = useState(false);
 

@@ -5,7 +5,7 @@ import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";
 
 
-import Logo from "../../Assets/Images/header.png";
+import Logo from "../../Assets/Images/header.webp";
 
 import Visa from "../../Assets/Images/Visa.jpg";
 import MasterCard from "../../Assets/Images/MasterCard.jpg";

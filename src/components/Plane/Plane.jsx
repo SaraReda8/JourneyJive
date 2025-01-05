@@ -2,26 +2,23 @@ import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import styles from "./Plane.module.css";
 
-// Import assets
-import headerBg from "../../Assets/Images/header-bg.jpg";
-import planeImg from "../../Assets/Images/header.png";
+import headerBg from "../../Assets/Images/header-bg.webp";
+import planeImg from "../../Assets/Images/header.webp";
 
 export default function Plane() {
   const navigate = useNavigate();
 
   const handleBookClick = () => {
-    navigate('/book'); // Navigate to the '/book' route
+    navigate('/book'); 
   };
 
   return (
     <div className={styles.container}>
-      {/* Background */}
       <div
         className={styles.bg}
         style={{ backgroundImage: `url(${headerBg})` }}
       ></div>
 
-      {/* Content */}
       <div className={styles.content}>
         <div className={styles.text}>
           <p>Elevate Your Travel Journey</p>

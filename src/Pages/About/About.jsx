@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkedAlt, faClock, faLeaf, faCheckCircle, faUsers, faStar } from "@fortawesome/free-solid-svg-icons";
-import aboutImg from "../../Assets/Images/aboutus.jpg";
+import aboutImg from "../../Assets/Images/aboutus.webp";
 import Awards from "../../components/Awards/Awards";
 import styles from "./About.module.css";
 import Team from './../../components/Team/Team';

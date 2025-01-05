@@ -11,7 +11,7 @@ import img7 from '../../Assets/Images/v6.jpg';
 import img8 from '../../Assets/Images/v7.jpg';
 import img9 from '../../Assets/Images/turkey-holiday.jpg';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
-import GalleryImage from '../../Assets/Images/1.jpg';
+import GalleryImage from '../../Assets/Images/1.webp';
 export default function Gallery() {
     const galleryImages = [
       [img1, img2, img3, img4], 

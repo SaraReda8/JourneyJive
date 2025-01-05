@@ -4,7 +4,7 @@ import CityBreakCard from '../../components/CityBreakCard/CityBreakCard';
 import Container from 'react-bootstrap/Container';
 import styles from './CityBreaks.module.css';
 import Breadcrumbs from './../../components/Breadcrumbs/Breadcrumbs';
-import bghotel from '../../../src/Assets/Images/1.jpg'
+import bghotel from '../../../src/Assets/Images/1.webp'
 export default function CityBreaks() {
   const [selectedCity, setSelectedCity] = useState('london');
 

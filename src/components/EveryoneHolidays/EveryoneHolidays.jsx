@@ -10,7 +10,7 @@ import CityBreak from './../../Assets/Images/city-break.jpg';
 import HotelHoliday from './../../Assets/Images/hotel-holiday.jpg';
 import SnowyVillage from './../../Assets/Images/snowy-village.jpg';
 import LuxuryEscapes from './../../Assets/Images/Luxuryescapes.jpg';
-import AboutUs from './../../Assets/Images/aboutus.jpg';
+import AboutUs from './../../Assets/Images/aboutus.webp';
 import V3 from './../../Assets/Images/v3.jpg';
 
 const images = [

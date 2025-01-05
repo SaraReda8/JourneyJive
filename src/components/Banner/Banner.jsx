@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import sliderImg from "../../Assets/Images/s1.png";
-import sliderImg1 from "../../Assets/Images/s2.png";
+import sliderImg from "../../Assets/Images/s1.webp";
+import sliderImg1 from "../../Assets/Images/s2.webp";
 import "./banner.css"
 
 const Banner = () => {

@@ -13,6 +13,9 @@
     position: relative;
     border-radius: 8px;
     overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    animation: slideDown 1.5s ease-in-out;
+
 }
 
 .content {
@@ -37,3 +40,13 @@
 }
 
 
+@keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

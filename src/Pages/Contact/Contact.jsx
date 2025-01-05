@@ -4,7 +4,7 @@ import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";
 import Form from '../../components/Form/Form';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
-import bgContact from '../../../src/Assets/Images/bg.jpg';
+import bgContact from '../../../src/Assets/Images/bg.webp';
 import Map from '../../components/Map/Map';
 export default function ContactUs() {
   
@@ -36,8 +36,7 @@ export default function ContactUs() {
               </div>
               <h3 className={styles.cardTitle}>Address</h3>
               <p className={styles.cardBody}>
-                168/170, Ave 01, Old York Drive Rich, Dhaka, Bangladesh
-              </p>
+              88 Tahrir Square, Downtown, Cairo, Egypt              </p>
             </div>
           </div>
 
@@ -52,8 +51,7 @@ export default function ContactUs() {
               <h3 className={styles.cardTitle}>Call Us!</h3>
               <p className={styles.cardBody}>
                 +88 0156 986 2560 <br />
-                +880 176 1111 456
-              </p>
+                +011 868 8888 3063              </p>
             </div>
           </div>
 
@@ -67,8 +65,7 @@ export default function ContactUs() {
               </div>
               <h3 className={styles.cardTitle}>Email Info</h3>
               <p className={styles.cardBody}>
-                info@companyname123.com <br />
-                info@example.com
+                JourneyJive@example.com
               </p>
             </div>
           </div>

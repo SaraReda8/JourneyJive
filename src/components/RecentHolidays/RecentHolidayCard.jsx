@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import styles from './RecentHolidayCard.module.css'; // Import CSS module for styling
 
 function RecentHolidayCard({
