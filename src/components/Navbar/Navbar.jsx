@@ -70,6 +70,14 @@ const NavBar = React.memo(() => {
                         </Nav.Link>
                         <Nav.Link 
                             as={Link} 
+                            to="/TravelList" 
+                            className={`${Style.navlink} ${activeLink === '/TravelList' ? Style.active : ''}`}
+                            onClick={() => handleLinkClick('/TravelList')}
+                        >
+                         TravelList
+                        </Nav.Link>
+                        <Nav.Link 
+                            as={Link} 
                             to="/ContactUs" 
                             className={`${Style.navlink} ${activeLink === '/ContactUs' ? Style.active : ''}`}
                             onClick={() => handleLinkClick('/ContactUs')}

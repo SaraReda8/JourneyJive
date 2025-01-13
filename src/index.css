@@ -9,11 +9,13 @@
     --gray-color:#777777dc;
     --darkgray-color:#555555;
     --Gold-color: rgb(253, 214, 85);
+    --dark-blue: #213555;
+    --medium-blue: #3E5879;
+    --light-brown: #D8C4B6;
     --font-family: 'Encode Sans Expanded', sans-serif;
     --light-color: white;
     --bg-color: #fffefe;
-    --beige-color: rgb(243, 228, 176);
-    --card-shadow: rgba(0, 0, 0, 0.1);
+    --beige-color: #F5EFE7;    --card-shadow: rgba(0, 0, 0, 0.1);
     --card-hover-shadow: rgba(0, 0, 0, 0.3);
 }
 

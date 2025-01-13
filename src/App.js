@@ -19,10 +19,10 @@ import PrivacyPolicyy from './Pages/PrivacyPolicyy/PrivacyPolicyy.jsx';
 import Feedback from './Pages/Feedback/Feedback.jsx';
 import Blog from './Pages/Blog/Blog.jsx';
 import Faq from './Pages/Faq/Faq.jsx';
-
 import BaseForm from './components/Form/Form';
 import Booking from './Pages/Booking/Booking.jsx';
 import Newsletter from './Pages/Newsletter/Newsletter';
+import TravelList from './Pages/TravelList/TravelList';
 const routers = createBrowserRouter([
   {
     path: '/',
@@ -46,6 +46,7 @@ const routers = createBrowserRouter([
       { path: 'ContactUs', element: <Contact /> },
       { path: 'newsletter', element: <Newsletter /> },
       { path: 'Booking', element: <Booking /> },
+      { path: 'travelList', element: <TravelList /> },
 
 
     ],
