@@ -23,38 +23,45 @@ import BaseForm from './components/Form/Form';
 import Booking from './Pages/Booking/Booking.jsx';
 import Newsletter from './Pages/Newsletter/Newsletter';
 import TravelList from './Pages/TravelList/TravelList';
-const routers = createBrowserRouter([
+
+// Configure the router
+const routers = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Layout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: '*', element: <NotFound /> },
+        { path: 'about', element: <About /> },
+        { path: 'terms', element: <TermOfServices /> },
+        { path: 'citybreaks', element: <CityBreaks /> },
+        { path: 'faqs', element: <Faq /> },
+        { path: 'destinations', element: <Destinations /> },
+        { path: 'holidayDetails', element: <HolidayDetails /> },
+        { path: 'privacypolicy', element: <PrivacyPolicyy /> },
+        { path: 'feedback', element: <Feedback /> },
+        { path: 'blog', element: <Blog /> },
+        { path: 'gallery', element: <Gallery /> },
+        { path: 'baseform', element: <BaseForm /> },
+        { path: 'holidays', element: <Holidays /> },
+        { path: 'tourguide', element: <TourGuide /> },
+        { path: 'ContactUs', element: <Contact /> },
+        { path: 'newsletter', element: <Newsletter /> },
+        { path: 'Booking', element: <Booking /> },
+        { path: 'travelList', element: <TravelList /> },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <Layout />,
-    children: [
-      {index:true , element: <Home /> },
-      { path: '*', element: <NotFound /> },
-      { path: 'about', element: <About /> },
-      { path: 'terms', element: <TermOfServices /> },
-      { path: 'citybreaks', element: <CityBreaks /> },
-      { path: 'faqs', element: <Faq /> },
-      { path: 'destinations', element: <Destinations /> },
-      { path: 'holidayDetails', element: <HolidayDetails /> },
-      { path: 'privacypolicy', element: <PrivacyPolicyy /> },
-      { path: 'feedback', element: <Feedback /> },
-      { path: 'blog', element: <Blog /> },
-      { path: 'gallery', element: <Gallery /> },
-      { path: 'baseform', element: <BaseForm /> },
-      { path: 'holidays', element: <Holidays /> },
-      { path: 'tourguide', element: <TourGuide /> },
-      { path: 'ContactUs', element: <Contact /> },
-      { path: 'newsletter', element: <Newsletter /> },
-      { path: 'Booking', element: <Booking /> },
-      { path: 'travelList', element: <TravelList /> },
+    basename: '/JourneyJive', // Add this line
+  }
+);
 
-
-    ],
-  },
-]);
 
 function App() {
   return <RouterProvider router={routers} />;
 }
 
 export default App;
+
