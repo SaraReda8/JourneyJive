@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import EveryoneHolidaysCard from './EveryoneHolidaysCard';
 import EveryoneHolidaysItems from './../../Assets/files(js)/HolidaysItems';
 import AllInclusive from './../../Assets/Images/all-inclusive-all.jpg';
-import Thailand from './../../Assets/Images/thailand.jpg';
+import Thailand from './../../Assets/Images/thailand.webp';
 import BoatCruise from './../../Assets/Images/boat-cruise.jpg';
 import CityBreak from './../../Assets/Images/city-break.jpg';
 import HotelHoliday from './../../Assets/Images/hotel-holiday.jpg';

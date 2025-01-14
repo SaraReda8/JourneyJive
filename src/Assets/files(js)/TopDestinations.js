@@ -1,8 +1,8 @@
 import img1 from "../Images/destination-3.jpg";
-import img2 from "../Images/destination-1.jpg";
+import img2 from "../Images/destination-1.webp";
 import img3 from "../Images/holiday-paris.jpg";
 import img4 from "../Images/boat-cruise.jpg";
-import img5 from "../Images/africa.jpg";
+import img5 from "../Images/africa.webp";
 import img6 from"../Images/spain-holiday.jpg";
 import img7 from "../Images/bg-1.jpg";
 import img8 from "../Images/egypt-holiday.jpg";

@@ -4,26 +4,26 @@
 
 .spaDiv {
     background-image: linear-gradient(rgba(0, 0, 0, 0),
-     rgba(0, 0, 0, 0.50)), url('../../Assets/Images/spa.jpg');
+     rgba(0, 0, 0, 0.50)), url('../../Assets/Images/spa.webp');
 }
 
 .poolDiv {
     background-image: linear-gradient(rgba(0, 0, 0, 0),
-     rgba(0, 0, 0, 0.50)), url('../../Assets/Images/pool2.jpg');
+     rgba(0, 0, 0, 0.50)), url('../../Assets/Images/pool2.webp');
 }
 
 .petFriendlyDiv {
     background-image: linear-gradient(rgba(0, 0, 0, 0),
-     rgba(0, 0, 0, 0.50)), url('../../Assets/Images/pet-friendly.jpg');
+     rgba(0, 0, 0, 0.50)), url('../../Assets/Images/pet-friendly.webp');
 }
 
 .allInclusiveDiv {
     background-image: linear-gradient(rgba(0, 0, 0, 0), 
-    rgba(0, 0, 0, 0.60)), url('../../Assets/Images/all-inclusive.jpg');
+    rgba(0, 0, 0, 0.60)), url('../../Assets/Images/all-inclusive.webp');
 }
 .OceanViewDiv{
     background-image: linear-gradient(rgba(0, 0, 0, 0), 
-    rgba(0, 0, 0, 0.60)), url('../../Assets/Images/ocean-view.jpg');
+    rgba(0, 0, 0, 0.60)), url('../../Assets/Images/ocean-view.webp');
 }
 .AdventureToursDiv{
     background-image: linear-gradient(rgba(0, 0, 0, 0), 
@@ -31,13 +31,13 @@
 }
 .MountainDiv{
     background-image: linear-gradient(rgba(0, 0, 0, 0), 
-    rgba(0, 0, 0, 0.60)), url('../../Assets/Images/mountain-houses.jpg');
+    rgba(0, 0, 0, 0.60)), url('../../Assets/Images/mountain-houses.webp');
 }
 
 
 .LuxurySuiteeDiv{
     background-image: linear-gradient(rgba(0, 0, 0, 0), 
-    rgba(0, 0, 0, 0.60)), url('../../Assets/Images/Luxury-Suitee.jpg');
+    rgba(0, 0, 0, 0.60)), url('../../Assets/Images/Luxury-Suitee.webp');
 }
 
 .imgHover {

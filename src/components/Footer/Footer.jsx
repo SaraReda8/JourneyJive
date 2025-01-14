@@ -7,10 +7,10 @@ import { MdLocationOn } from "react-icons/md";
 
 import Logo from "../../Assets/Images/header.webp";
 
-import Visa from "../../Assets/Images/Visa.jpg";
-import MasterCard from "../../Assets/Images/MasterCard.jpg";
-import PayPal from "../../Assets/Images/PayPal.jpg";
-import InstaPay from "../../Assets/Images/instapay.jpg";
+import Visa from "../../Assets/Images/Visa.webp";
+import MasterCard from "../../Assets/Images/MasterCard.webp";
+import PayPal from "../../Assets/Images/PayPal.webp";
+import InstaPay from "../../Assets/Images/instapay.webp";
 
 export default function Footer() {
   return (
@@ -116,6 +116,7 @@ export default function Footer() {
      
             <input
               type="text"
+              id='search'
               placeholder="Search..."
               className={styles.searchInput}
             />

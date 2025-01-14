@@ -6,6 +6,7 @@ export default function TravelListItem({ item, onDeleteItem, onToggleItem }) {
       <input
         type="checkbox"
         checked={item.packed}
+        id="check"
         onChange={() => onToggleItem(item.id)}
       />
       <span

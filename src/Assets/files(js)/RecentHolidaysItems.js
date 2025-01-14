@@ -4,7 +4,7 @@ import PortugalImg from '../Images/portugal.jpg';
 import GreeceImg from '../Images/Greece2.jpg';
 import MaldivesImg from '../Images/Maldives2.jpg';
 import ItalyImg from '../Images/italy.jpg';
-import ThailandImg from '../Images/thailand.jpg';
+import ThailandImg from '../Images/thailand.webp';
 import JapanImg from '../Images/japan.jpg';
 import EgyptImg from '../Images/egypt.jpg';
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './destination.module.css';
-import spain from '../../Assets/Images/spain.jpg';
-import thailand from '../../Assets/Images/thailand.jpg';
-import africa from '../../Assets/Images/africa.jpg';
-import Egypt from '../../Assets/Images/egypt-hotel2.jpg';
-import switzerland from '../../Assets/Images/destination-1.jpg';
+import spain from '../../Assets/Images/spain.webp';
+import thailand from '../../Assets/Images/thailand.webp';
+import africa from '../../Assets/Images/africa.webp';
+import Egypt from '../../Assets/Images/egypt-hotel2.webp';
+import switzerland from '../../Assets/Images/destination-1.webp';
 
 export default function Destination() {
     const destinations = [

@@ -1,5 +1,5 @@
 import EgyptHotel1 from '../Images/egypt-hotel1.jpg';
-import EgyptHotel2 from '../Images/egypt-hotel2.jpg';
+import EgyptHotel2 from '../Images/egypt-hotel2.webp';
 import EgyptHotel3 from '../Images/egypt-hotel3.jpg';
 import EgyptHotel4 from '../Images/egypt-hotel4.jpg';
 import EgyptHotel5 from '../Images/egypt-hotel5.jpg';
