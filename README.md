@@ -37,21 +37,19 @@ JourneyJive is a travel agency website offering a range of travel-related servic
 ---
 
 ## Technologies Used
-React.js - JavaScript library for building user interfaces
-React Router - For routing and navigation within the app
-Redux - State management for handling global state
-React Query - Data fetching and synchronization
-Formik - Form handling and validation
-Yup - Schema validation for forms
-Fetch API - Native JavaScript API for making HTTP requests
-Bootstrap - Front-end framework for responsive design
-React Bootstrap - Bootstrap components built with React
-Font Awesome - Icons for enhanced user experience
-Framer Motion - Animation library for interactive UIs
-React Scroll - For smooth scrolling effects
-Slick Carousel - Carousel component for image slideshows
-Sequelize - ORM for database management (if you're handling a database)
-Web Vitals - Performance monitoring library for tracking web vitals
+**React.js** - JavaScript library for building user interfaces
+**React Router** - For routing and navigation within the app
+**React Query** - Data fetching and synchronization
+**Formik** - Form handling and validation
+**Yup** - Schema validation for forms
+**Fetch API** - Native JavaScript API for making HTTP requests
+**Bootstrap** - Front-end framework for responsive design
+**React Bootstrap** - Bootstrap components built with React
+**Font Awesome** - Icons for enhanced user experience
+**Framer Motion** - Animation library for interactive UIs
+**React Scroll** - For smooth scrolling effects
+**Slick Carousel** - Carousel component for image slideshows
+**Web Vitals** - Performance monitoring library for tracking web vitals
 - 
 
 ---
@@ -66,20 +64,18 @@ To run the project locally, follow these steps:
    git clone https://github.com/SaraReda8/JourneyJive.git
 2-Navigate to the project directory:
 
-نسخ الكو
    ```bash
 cd JourneyJive
 3-Install the dependencies:
+
    ```bash
 npm install
 
 4-Start the development server:
+
    ```bash
 npm start
-نسخ الكود
 
-
-نسخ الكود
 
 
 
