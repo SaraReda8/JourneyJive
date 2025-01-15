@@ -58,23 +58,10 @@ JourneyJive is a travel agency website offering a range of travel-related servic
 
 To run the project locally, follow these steps:
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/SaraReda8/JourneyJive.git
-2-Navigate to the project directory:
-
-   ```bash
-cd JourneyJive
-3-Install the dependencies:
-
-   ```bash
-npm install
-
-4-Start the development server:
-
-   ```bash
-npm start
+1. Clone the repository: git clone https://github.com/SaraReda8/JourneyJive.git
+2-Navigate to the project directory: cd JourneyJive
+3-Install the dependencies:npm install
+4-Start the development server:npm start
 
 
 
