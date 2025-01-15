@@ -7,18 +7,18 @@ JourneyJive is a travel agency website offering a range of travel-related servic
 ---
 
 ## Features
-
-1. **Responsive Design:** Fully responsive layout using Bootstrap 5, ensuring a seamless experience on both desktop and mobile devices.
-2. **Smooth Navigation:** The navigation bar features dropdowns for easy access to various sections like Holidays, City Breaks, Destinations, and more.
-3. **Interactive Footer:** Includes quick links to essential pages, contact information, social media, and payment methods with hover effects.
-4. **Dynamic Routes:** The website uses React Router for smooth, client-side navigation between pages without reloading the entire page.
-5. **Custom Styling:** Styled with custom CSS modules for a clean and modern design, with animations powered by `animate.css`.
-6. **Search Functionality:** An input field for users to search for content within the site.
-7. **Icons:** Integrated with React Icons for a consistent and visually appealing user interface.
-8. **Mega Menu:** A multi-column mega menu for better organization of links and categories under the "Pages" dropdown.
-9. **Dynamic Content Loading:** Components like the holidays and city breaks dynamically load content based on user actions.
-10. **Smooth Scrolling:** Scrolling effects are implemented for a pleasant navigation experience using the `react-scroll` library.
-11. **Contact Channels:** Interactive contact section for users to reach out via phone, email, or physical address.
+1. **Interactive Navigation Bar** - A responsive and user-friendly navigation bar, designed to help users easily navigate between different sections like Home, Holidays, City Breaks, Destinations, and more.
+2. **Responsive Design** - Optimized for mobile and desktop devices, ensuring the best user experience across all platforms.
+3. **Holiday and City Breaks** - Information on holidays and city breaks with easy-to-browse packages, details, and pricing.
+4. **Travel List Management** - A unique "Far Away" component allows you to create a to-do list for your trip. You can add tasks, delete completed ones, and track the percentage of completed items.
+5. **Booking and Contact Pages** - Easy booking interface and contact details to get in touch with the team.
+6. **Mega Menu** - A detailed and user-friendly mega menu with access to all the important pages like Terms, Privacy Policy, FAQs, etc.
+7. **Customizable Footer** - A clean footer that contains useful links like social media, contact information, and payment methods.
+8. **Tour Guides and Feedback** - Access to tour guide information and feedback from other travelers to help you make informed decisions.
+9. **Search Functionality** - A search bar to help users quickly find information, destinations, or services they are looking for.
+10. **User Testimonials** - Display of user reviews and testimonials, making it easier for new users to trust and rely on the services.
+11. **Payment Methods Integration** - Secure integration with popular payment methods like Visa, MasterCard, PayPal, and InstaPay for easy transactions.
+12. **Animated Elements** - Smooth animations using libraries like `animate.css` and `framer-motion` to improve the overall user experience.
 12. **Social Media and Payment Icons:** Displays major payment methods (Visa, MasterCard, PayPal, InstaPay) and links to social media platforms for enhanced trust.
 13. **SVG Animations:** Logo animations and rotating text for an engaging user interface.
 14. **User Authentication:** Authentication forms to ensure users can sign up, log in, and manage their profiles.
@@ -37,17 +37,22 @@ JourneyJive is a travel agency website offering a range of travel-related servic
 ---
 
 ## Technologies Used
-
-- **React**: JavaScript library for building user interfaces.
-- **React Router**: For handling navigation between pages.
-- **Bootstrap 5**: Frontend framework for responsive design.
-- **React-Bootstrap**: Bootstrap components rebuilt for React.
-- **React Icons**: A set of SVG icons for easy inclusion in React applications.
-- **Formik & Yup**: For handling forms and validation.
-- **Framer Motion**: Library for animations and transitions.
-- **React Scroll**: Smooth scrolling library.
-- **PostCSS**: For CSS post-processing.
-- **ScrollReveal**: A library to reveal elements on scroll.
+React.js - JavaScript library for building user interfaces
+React Router - For routing and navigation within the app
+Redux - State management for handling global state
+React Query - Data fetching and synchronization
+Formik - Form handling and validation
+Yup - Schema validation for forms
+Fetch API - Native JavaScript API for making HTTP requests
+Bootstrap - Front-end framework for responsive design
+React Bootstrap - Bootstrap components built with React
+Font Awesome - Icons for enhanced user experience
+Framer Motion - Animation library for interactive UIs
+React Scroll - For smooth scrolling effects
+Slick Carousel - Carousel component for image slideshows
+Sequelize - ORM for database management (if you're handling a database)
+Web Vitals - Performance monitoring library for tracking web vitals
+- 
 
 ---
 
@@ -59,4 +64,22 @@ To run the project locally, follow these steps:
 
    ```bash
    git clone https://github.com/SaraReda8/JourneyJive.git
+2-Navigate to the project directory:
+
+نسخ الكو
+   ```bash
+cd JourneyJive
+3-Install the dependencies:
+   ```bash
+npm install
+
+4-Start the development server:
+   ```bash
+npm start
+نسخ الكود
+
+
+نسخ الكود
+
+
 
