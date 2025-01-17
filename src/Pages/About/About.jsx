@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkedAlt, faClock, faLeaf, faCheckCircle, faUsers, faStar } from "@fortawesome/free-solid-svg-icons";
@@ -8,11 +8,6 @@ import styles from "./About.module.css";
 import Team from './../../components/Team/Team';
 
 const About = () => {
-  useEffect(() => {
-    document.title = "About Us";
-    window.scrollTo(0, 0);
-  }, []);
-
   const cardData = [
     {
       title: "Customized Travel Plans",
