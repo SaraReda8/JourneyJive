@@ -1,16 +1,16 @@
-import React from 'react';
-import Slider from 'react-slick';
-import styles from './TopDestinations.module.css';
-import topDestinations from '../../Assets/files(js)/TopDestinations';
+import React from "react";
+import Slider from "react-slick";
+import styles from "./TopDestinations.module.css";
+import topDestinations from "../../Assets/files(js)/TopDestinations";
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function TopDestinations() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 600,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -39,17 +39,19 @@ export default function TopDestinations() {
         {topDestinations.map((destination) => (
           <div key={destination.id} className={styles.card}>
             <img
-              src={destination.image || '/placeholder-image.jpg'}
-              alt={destination.name || 'Destination'}
+              src={destination.image}
+              alt={destination.name}
               loading="lazy"
               className={styles.cardImage}
+              width="400"  // اضبط العرض
+              height="250"  // اضبط الارتفاع
             />
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>{destination.name}</h3>
               <p className={styles.info}>
                 {destination.places} Places | {destination.hotels} Hotels
               </p>
-              <div className={styles.stars} aria-label={`${destination.stars} stars`}>
+              <div className={styles.stars}>
                 {Array(destination.stars)
                   .fill()
                   .map((_, i) => (

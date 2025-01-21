@@ -9,7 +9,7 @@ export default function Plane() {
   const navigate = useNavigate();
 
   const handleBookClick = () => {
-    navigate("/HolidayDetails"); // Navigate to the HolidayDetails page
+    navigate("/HolidayDetails"); 
   };
 
   return (
@@ -44,7 +44,7 @@ export default function Plane() {
           className={styles.plane}
           fetchpriority="high"
           width="1200"  
-          height="400" 
+          height="400"  
         />
       </div>
     </div>

@@ -29,7 +29,13 @@ const NavBar = React.memo(() => {
       <Container>
         {/* Logo and Brand */}
         <Navbar.Brand as={Link} to="/" className={`d-flex align-items-center ${Style.brand}`}>
-          <img src={AirplaneLogo} alt="logo" className={Style.logo} />
+          <img
+            src={AirplaneLogo}
+            alt="logo"
+            className={Style.logo}
+            width="32" 
+            height="32"  
+          />
           <span className={Style.brandName}>JourneyJive</span>
         </Navbar.Brand>
 
