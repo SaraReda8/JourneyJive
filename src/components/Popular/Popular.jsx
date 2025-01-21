@@ -11,6 +11,8 @@ export default function Popular() {
           alt="World map showing popular travel destinations"
           loading="lazy"
           className={styles.image}
+          width="600"  // Add actual width
+          height="400" // Add actual height
         />
       </div>
       <div className="col-md-6">
@@ -24,7 +26,11 @@ export default function Popular() {
           <li>Africa <span className={styles.seccolor}>(18)</span></li>
           <li>North America <span className={styles.seccolor}>(05)</span></li>
         </ul>
-        <a href="/Destinations" className={`${styles.btn3} btn3`}>
+        <a
+          href="/Destinations"
+          className={`${styles.btn3} btn3`}
+          aria-label="Discover All Destinations"
+        >
           Discover All Destinations
         </a>
       </div>

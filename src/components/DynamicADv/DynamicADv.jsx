@@ -19,7 +19,7 @@ export default function DynamicADv(){
       </Col>
       <Col md="4" className="text-center mt-3 mt-md-0">
         <a
-          href="/ContactUs" // Link updated to /ContactUs
+          href="/ContactUs" 
           className={`${styles.secondaryBtn} ${styles.bounce}`}
         >
           Contact Us!

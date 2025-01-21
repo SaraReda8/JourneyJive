@@ -1,3 +1,5 @@
+
+
 .navbar {
   background-color: white;
   padding: 1rem 0.5rem;
@@ -13,7 +15,7 @@
 .brandName {
   font-family: 'Brush Script MT', cursive;
   font-size: 2rem;
-  color: #333;
+  color: var(--dark-color);
   transition: color 0.3s;
 }
 
@@ -37,15 +39,10 @@
 }
 
 .megaMenuContainer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   padding: 1rem;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 }
 
 .megaMenuItem {
@@ -63,12 +60,12 @@
   margin-right: 0.5rem;
   font-size: 1.2rem;
 }
+
 .navlink.active,
 .megaMenuItem.active {
   color: var(--sec-color) !important;
   text-decoration: underline;
 }
-
 
 @media (max-width: 768px) {
   .mega-menu {
@@ -76,6 +73,6 @@
   }
 
   .megaMenuContainer {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }

@@ -48,7 +48,13 @@ const About = () => {
         <Container>
           <Row className="align-items-center">
             <Col md="8">
-              <img src={aboutImg} alt="About Us" className="img-fluid rounded-5" />
+              <img
+                src={aboutImg}
+                alt="About Us"
+                className="img-fluid rounded-5"
+                width="600"  // Add actual width
+                height="400" // Add actual height
+              />
             </Col>
             <Col md="4">
               <h1 className="fw-bold">Welcome to JourneyJive</h1>
