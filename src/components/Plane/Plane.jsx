@@ -9,7 +9,7 @@ export default function Plane() {
   const navigate = useNavigate();
 
   const handleBookClick = () => {
-    navigate('/book'); 
+    navigate('/HolidayDetails'); 
   };
 
   return (
@@ -24,14 +24,13 @@ export default function Plane() {
           <p>Elevate Your Travel Journey</p>
           <h1>Experience The Magic Of Flight!</h1>
           <button className='btn2' onClick={handleBookClick}>
-            Book A Trip Now
-          </button>
+          Explore New Deals          </button>
         </div>
         <img
           src={planeImg}
           alt="Plane flying"
           className={styles.plane}
-          loading="lazy"
+          fetchpriority="high" 
         />
       </div>
     </div>
