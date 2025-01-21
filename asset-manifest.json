@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JourneyJive/static/css/main.6b1b9553.css",
-    "main.js": "/JourneyJive/static/js/main.3da3d7fd.js",
+    "main.css": "/JourneyJive/static/css/main.7e3af2d0.css",
+    "main.js": "/JourneyJive/static/js/main.6e45c004.js",
     "static/js/488.f56d5189.chunk.js": "/JourneyJive/static/js/488.f56d5189.chunk.js",
     "static/media/1.webp": "/JourneyJive/static/media/1.c2e085fd72be89888953.webp",
     "static/media/holidays-hero-bg.webp": "/JourneyJive/static/media/holidays-hero-bg.d24914ffd2acae4627a6.webp",
@@ -119,12 +119,12 @@
     "static/media/slick.woff": "/JourneyJive/static/media/slick.295183786cd8a1389865.woff",
     "static/media/airplane.svg": "/JourneyJive/static/media/airplane.4dc8d5f4a6145b127c68cae64fa03076.svg",
     "static/media/chevron-right.svg": "/JourneyJive/static/media/chevron-right.e7d1c5958ea417f711c20acaf385e71e.svg",
-    "main.6b1b9553.css.map": "/JourneyJive/static/css/main.6b1b9553.css.map",
-    "main.3da3d7fd.js.map": "/JourneyJive/static/js/main.3da3d7fd.js.map",
+    "main.7e3af2d0.css.map": "/JourneyJive/static/css/main.7e3af2d0.css.map",
+    "main.6e45c004.js.map": "/JourneyJive/static/js/main.6e45c004.js.map",
     "488.f56d5189.chunk.js.map": "/JourneyJive/static/js/488.f56d5189.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b1b9553.css",
-    "static/js/main.3da3d7fd.js"
+    "static/css/main.7e3af2d0.css",
+    "static/js/main.6e45c004.js"
   ]
 }
