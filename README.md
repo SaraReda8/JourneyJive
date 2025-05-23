@@ -3,7 +3,7 @@
 Journey Jive is a fully responsive travel website built using **React.js** and **Vite**, designed to provide an engaging and visually appealing experience for users exploring travel destinations, city breaks, holidays, and more.
 
 ## 🌐 Live Preview
-
+https://journeyjive.netlify.app/
 ## 🚀 Tech Stack
 
 - ⚛️ **React.js** (with `react-router-dom` for routing)
