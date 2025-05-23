@@ -1,6 +1,6 @@
 /* Background Section */
 .header {
-    background: url('../../Assets/Images/black2.jpg') no-repeat center center/cover;
+    background: url('../../assets/Images/black2.jpg') no-repeat center center/cover;
     height: 250px;
     display: flex;
     align-items: center;

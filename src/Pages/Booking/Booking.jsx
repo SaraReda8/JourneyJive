@@ -1,5 +1,4 @@
 
-// import styles from './Booking.module.css';
 import PlanYourHoliday from '../../components/PlanYourHoliday/PlanYourHoliday';
 
 import Form from '../../components/Form/Form';
