@@ -4,7 +4,7 @@ import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";
 import Form from '../../components/Form/Form';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
-import bgContact from '../../../src/Assets/Images/bg.webp';
+import bgImage from "../../assets/Images/bg.webp";
 import Map from '../../components/Map/Map';
 export default function ContactUs() {
   
@@ -12,7 +12,7 @@ export default function ContactUs() {
   return (
     <>
       {/* Header Section */}
-      <Breadcrumbs title="Contact Us" pagename="Contact Us" bgImage={bgContact} />
+<Breadcrumbs title="Contact Us" pagename="Contact Us" bgImage={bgImage} />
 
       {/* Main Container */}
       <div className={`container ${styles.container}`}>
