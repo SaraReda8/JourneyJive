@@ -1,17 +1,17 @@
 .recentHolidays .row .col-lg-6:first-of-type .img-div {
-    background-image: url('../../Assets/Images/spain.webp');
+    background-image: url('../../assets/Images/spain.webp');
 }
 
 .recentHolidays .row .col-lg-6:nth-last-of-type(2) .img-div {
-    background-image: url('../../Assets/Images/portugal.jpg');
+    background-image: url('../../assets/Images/portugal.jpg');
 }
 
 .recentHolidays .row .col-lg-6:nth-last-of-type(3) .img-div {
-    background-image: url('../../Assets/Images/greece.jpg');
+    background-image: url('../../assets/Images/greece.jpg');
 }
 
 .recentHolidays .row .col-lg-6:last-of-type .img-div {
-    background-image: url('../../Assets/Images/maldives.jpg');
+    background-image: url('../../assets/Images/maldives.jpg');
 }
 
 .recentHolidays .img-div {
