@@ -1,5 +1,5 @@
 import React from 'react';
-import worldmap from '../../Assets/Images/Worldmap.webp';
+import worldmap from '../../assets/Images/Worldmap.webp';
 import styles from './Popular.module.css';
 
 export default function Popular() {

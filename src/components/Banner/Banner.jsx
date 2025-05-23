@@ -1,7 +1,6 @@
-import React from "react";
 import { Carousel } from "react-bootstrap";
-import sliderImg from "../../Assets/Images/s1.webp";
-import sliderImg1 from "../../Assets/Images/s2.webp";
+import sliderImg from "../../assets/Images/s1.webp";
+import sliderImg1 from "../../assets/Images/s2.webp";
 import "./banner.css"
 
 const Banner = () => {

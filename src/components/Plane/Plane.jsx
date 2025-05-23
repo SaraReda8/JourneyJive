@@ -1,9 +1,8 @@
-import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import styles from "./Plane.module.css";
 
-import headerBg from "../../Assets/Images/header-bg.webp";
-import planeImg from "../../Assets/Images/header.webp";
+import headerBg from "../../assets/Images/header-bg.webp";
+import planeImg from "../../assets/Images/header.webp";
 
 export default function Plane() {
   const navigate = useNavigate();

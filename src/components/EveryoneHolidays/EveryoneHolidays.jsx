@@ -2,16 +2,16 @@ import React from 'react';
 import './EveryoneHolidays.css';
 import Container from 'react-bootstrap/Container';
 import EveryoneHolidaysCard from './EveryoneHolidaysCard';
-import EveryoneHolidaysItems from './../../Assets/files(js)/HolidaysItems';
-import AllInclusive from './../../Assets/Images/all-inclusive-all.jpg';
-import Thailand from './../../Assets/Images/thailand.webp';
-import BoatCruise from './../../Assets/Images/boat-cruise.jpg';
-import CityBreak from './../../Assets/Images/city-break.jpg';
-import HotelHoliday from './../../Assets/Images/hotel-holiday.jpg';
-import SnowyVillage from './../../Assets/Images/snowy-village.jpg';
-import LuxuryEscapes from './../../Assets/Images/Luxuryescapes.jpg';
-import AboutUs from './../../Assets/Images/aboutus.webp';
-import V3 from './../../Assets/Images/v3.jpg';
+import EveryoneHolidaysItems from './../../assets/files(js)/HolidaysItems';
+import AllInclusive from './../../assets/Images/all-inclusive-all.jpg';
+import Thailand from './../../assets/Images/thailand.webp';
+import BoatCruise from './../../assets/Images/boat-cruise.jpg';
+import CityBreak from './../../assets/Images/city-break.jpg';
+import HotelHoliday from './../../assets/Images/hotel-holiday.jpg';
+import SnowyVillage from './../../assets/Images/snowy-village.jpg';
+import LuxuryEscapes from './../../assets/Images/Luxuryescapes.jpg';
+import AboutUs from './../../assets/Images/aboutus.webp';
+import V3 from './../../assets/Images/v3.jpg';
 
 const images = [
   AllInclusive,

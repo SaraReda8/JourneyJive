@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './Team.module.css';
 
-import member1Img from '../../Assets/Images/member1.webp';
-import member2Img from '../../Assets/Images/member2.webp';
-import member3Img from '../../Assets/Images/member3.webp';
-import member4Img from '../../Assets/Images/member4.webp';
-import member5Img from '../../Assets/Images/member5.webp';
-import member6Img from '../../Assets/Images/member6.webp';
-import member7Img from '../../Assets/Images/member7.webp';
-import member8Img from '../../Assets/Images/member8.webp';
+import member1Img from '../../assets/Images/member1.webp';
+import member2Img from '../../assets/Images/member2.webp';
+import member3Img from '../../assets/Images/member3.webp';
+import member4Img from '../../assets/Images/member4.webp';
+import member5Img from '../../assets/Images/member5.webp';
+import member6Img from '../../assets/Images/member6.webp';
+import member7Img from '../../assets/Images/member7.webp';
+import member8Img from '../../assets/Images/member8.webp';
 
 const teamMembers = [
   { 

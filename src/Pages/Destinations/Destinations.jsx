@@ -1,4 +1,3 @@
-import { React } from 'react';
 import TopDestinations from '../../components/TopDestinations/TopDestinations';
 import Destination from '../../components/destination/destination';
 import Banner from './../../components/Banner/Banner';

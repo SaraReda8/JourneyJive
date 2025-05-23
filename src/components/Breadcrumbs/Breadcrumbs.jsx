@@ -1,4 +1,3 @@
-import React from "react";
 import "../Breadcrumbs/breadcrumbs.css";
 import { NavLink } from "react-router-dom";
 import { Breadcrumb, Container, Row } from "react-bootstrap";
@@ -11,7 +10,7 @@ const Breadcrumbs = (props) => {
       <div className="inner-banner-wrap">
         <div
           className="inner-banner-container"
-          style={{ backgroundImage: `url(${bgImage || "../../Assets/Images/bg.jpg"})` }}  // Use dynamic image
+          style={{ backgroundImage: `url(${bgImage || "../../assets/Images/bg.jpg"})` }}  // Use dynamic image
         >
           <Container>
             <div className="inner-banner-content">

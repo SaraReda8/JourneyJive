@@ -1,5 +1,4 @@
 // LastHolidaysSection.jsx
-import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { FaHeart, FaStar } from 'react-icons/fa';
 import styles from './LastHolidaysSection.module.css';

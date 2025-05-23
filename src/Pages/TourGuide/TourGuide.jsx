@@ -1,15 +1,14 @@
-import React from 'react';
 import styles from './TourGuide.module.css';
 
 // Images (replace these with the actual paths to your imported images)
-import guide1 from '../../Assets/Images/guide5.webp';
-import guide2 from '../../Assets/Images/guide2.webp';
-import guide3 from '../../Assets/Images/guide3.webp';
-import guide4 from '../../Assets/Images/guide4.webp';
-import guide5 from '../../Assets/Images/client-2.webp';
-import guide6 from '../../Assets/Images/client-1.webp';
+import guide1 from '../../assets/Images/guide5.webp';
+import guide2 from '../../assets/Images/guide2.webp';
+import guide3 from '../../assets/Images/guide3.webp';
+import guide4 from '../../assets/Images/guide4.webp';
+import guide5 from '../../assets/Images/client-2.webp';
+import guide6 from '../../assets/Images/client-1.webp';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
-import TOURG from'../../Assets/Images/1.webp';
+import TOURG from'../../assets/Images/1.webp';
 const guides = [
   { id: 1, name: 'lili Zoher', role: 'Guide', image: guide1 },
   { id: 2, name: 'Ward Alexander', role: 'Guide', image: guide2 },

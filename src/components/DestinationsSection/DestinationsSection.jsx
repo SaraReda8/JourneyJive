@@ -1,13 +1,6 @@
-import { React } from 'react';
 import Style from './DestinationsSection.module.css ';
 
-
 export default function DestinationsSection(){
-
-
-
-
-
 
 
     return <>

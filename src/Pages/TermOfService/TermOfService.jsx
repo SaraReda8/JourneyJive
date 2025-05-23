@@ -1,4 +1,3 @@
-import React from 'react';
 import Style from './TermOfService.module.css';
 import { FaUser, FaMapMarkedAlt, FaMoneyCheck, FaBan, FaPassport, FaShieldAlt, FaGlobe, FaEnvelope, FaGavel } from 'react-icons/fa';
 

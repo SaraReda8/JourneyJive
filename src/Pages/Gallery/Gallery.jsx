@@ -1,17 +1,16 @@
-import React from 'react';
 import styles from './Gallery.module.css';
 
-import img1 from '../../Assets/Images/v1.jpg';
-import img2 from '../../Assets/Images/v2.jpg';
-import img3 from '../../Assets/Images/v3.jpg';
-import img4 from '../../Assets/Images/v4.jpg';
-import img5 from '../../Assets/Images/Maldives2.jpg';
-import img6 from '../../Assets/Images/v5.jpg';
-import img7 from '../../Assets/Images/v6.jpg';
-import img8 from '../../Assets/Images/v7.jpg';
-import img9 from '../../Assets/Images/turkey-holiday.jpg';
+import img1 from '../../assets/Images/v1.jpg';
+import img2 from '../../assets/Images/v2.jpg';
+import img3 from '../../assets/Images/v3.jpg';
+import img4 from '../../assets/Images/v4.jpg';
+import img5 from '../../assets/Images/Maldives2.jpg';
+import img6 from '../../assets/Images/v5.jpg';
+import img7 from '../../assets/Images/v6.jpg';
+import img8 from '../../assets/Images/v7.jpg';
+import img9 from '../../assets/Images/turkey-holiday.jpg';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
-import GalleryImage from '../../Assets/Images/1.webp';
+import GalleryImage from '../../assets/Images/1.webp';
 export default function Gallery() {
     const galleryImages = [
       [img1, img2, img3, img4], 

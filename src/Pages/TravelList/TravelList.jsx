@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './TravelList.module.css';
 import TravelListLogo from '../../components/TravelListComponents/Logo';
 import Form from '../../components/TravelListComponents/Form';

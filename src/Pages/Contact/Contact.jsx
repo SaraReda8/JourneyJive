@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Contact.module.css";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";

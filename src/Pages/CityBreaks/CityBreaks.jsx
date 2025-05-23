@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import CityBreaksItems from '../../Assets/files(js)/CityBreaksItems';
+import  { useState } from 'react';
+import CityBreaksItems from '../../assets/files(js)/CityBreaksItems';
 import CityBreakCard from '../../components/CityBreakCard/CityBreakCard';
 import Container from 'react-bootstrap/Container';
 import styles from './CityBreaks.module.css';
 import Breadcrumbs from './../../components/Breadcrumbs/Breadcrumbs';
-import bghotel from '../../../src/Assets/Images/1.webp'
+import bghotel from '../../../src/assets/Images/1.webp'
 export default function CityBreaks() {
   const [selectedCity, setSelectedCity] = useState('london');
 

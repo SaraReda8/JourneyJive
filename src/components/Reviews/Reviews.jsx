@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./Reviews.module.css";
 
 // Importing images
-import client1 from "../../Assets/Images/client-1.webp";
-import client2 from "../../Assets/Images/client-2.webp";
-import client4 from "../../Assets/Images/client-4.webp";
+import client1 from "../../assets/Images/client-1.webp";
+import client2 from "../../assets/Images/client-2.webp";
+import client4 from "../../assets/Images/client-4.webp";
 
 export default function Reviews() {
   const reviews = [

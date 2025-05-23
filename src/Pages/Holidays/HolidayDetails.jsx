@@ -1,4 +1,3 @@
-import React from 'react';
 import RecentHolidays from '../../components/RecentHolidays/RecentHolidays';
 import FavouriteSection from '../../components/FavouriteSection/FavouriteSection';
 import SearchSection from './../../components/SearchSection/SearchSection';

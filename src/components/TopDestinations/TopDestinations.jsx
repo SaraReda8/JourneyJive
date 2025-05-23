@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import styles from "./TopDestinations.module.css";
-import topDestinations from "../../Assets/files(js)/TopDestinations";
+import topDestinations from "../../assets/files(js)/TopDestinations";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

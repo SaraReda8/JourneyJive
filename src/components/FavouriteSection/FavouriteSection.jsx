@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './FavouriteSection.module.css'; // Import the CSS module
 
 export default function FavouriteSection() {

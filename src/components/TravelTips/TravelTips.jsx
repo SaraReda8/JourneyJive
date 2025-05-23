@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './TravelTips.module.css';
 
-import packingImage from '../../Assets/Images/packing-tips.webp';
-import safetyImage from '../../Assets/Images/safety-tips.webp';
-import budgetImage from '../../Assets/Images/budget-travel.webp';
+import packingImage from '../../assets/Images/packing-tips.webp';
+import safetyImage from '../../assets/Images/safety-tips.webp';
+import budgetImage from '../../assets/Images/budget-travel.webp';
 
 export default function TravelTips() {
     return (

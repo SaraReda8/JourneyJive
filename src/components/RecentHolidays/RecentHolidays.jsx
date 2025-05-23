@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './RecentHolidays.module.css'; // Use CSS module
 import Container from 'react-bootstrap/Container';
-import RecentHolidaysItems from '../../Assets/files(js)/RecentHolidaysItems';
+import RecentHolidaysItems from '../../assets/files(js)/RecentHolidaysItems';
 import RecentHolidayCard from './RecentHolidayCard';
 
 export default function RecentHolidays() {

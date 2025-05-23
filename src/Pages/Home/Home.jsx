@@ -1,4 +1,3 @@
-import { React } from 'react';
 import Plane from './../../components/Plane/Plane';
 import TopDestinations from '../../components/TopDestinations/TopDestinations';
 import DynamicADv from './../../components/DynamicADv/DynamicADv';

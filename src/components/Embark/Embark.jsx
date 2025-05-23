@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Embark.module.css';
-import image33 from '../../Assets/Images/africa2.webp';
-import image34 from '../../Assets/Images/sunset2.webp';
-import bgImage from '../../Assets/Images/sunset4.webp';
+import image33 from '../../assets/Images/africa2.webp';
+import image34 from '../../assets/Images/sunset2.webp';
+import bgImage from '../../assets/Images/sunset4.webp';
 
 export default function Embark() {
   return (

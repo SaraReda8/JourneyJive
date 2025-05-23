@@ -1,4 +1,3 @@
-import React from 'react';
 import Style from './PrivacyPolicyy.module.css';
 import { FaUserShield, FaUser, FaEnvelopeOpen, FaCookieBite, FaLock, FaExclamationCircle, FaFileContract, FaEnvelope } from 'react-icons/fa';
 

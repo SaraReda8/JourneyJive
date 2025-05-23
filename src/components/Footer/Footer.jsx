@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { MdLocationOn } from "react-icons/md";
 
-import Logo from "../../Assets/Images/header.webp";
-import Visa from "../../Assets/Images/Visa.webp";
-import MasterCard from "../../Assets/Images/MasterCard.webp";
-import PayPal from "../../Assets/Images/PayPal.webp";
-import InstaPay from "../../Assets/Images/instapay.webp";
+import Logo from "../../assets/Images/header.webp";
+import Visa from "../../assets/Images/Visa.webp";
+import MasterCard from "../../assets/Images/MasterCard.webp";
+import PayPal from "../../assets/Images/PayPal.webp";
+import InstaPay from "../../assets/Images/instapay.webp";
 
 export default function Footer() {
   return (

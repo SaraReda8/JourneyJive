@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import ChevronRight from '../../Assets/Icons/chevron-right.svg';
+import ChevronRight from '../../assets/Icons/chevron-right.svg';
 import 'animate.css';
 
 function EveryoneHolidaysCard({ itemTitle, itemSubTitle, itemPrice, image }) {

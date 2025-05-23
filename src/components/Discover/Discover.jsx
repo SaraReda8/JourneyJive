@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import styles from './Discover.module.css';
-import christmasMarket from '../../Assets/Images/christmas2.jpg';
-import snowyVillage from '../../Assets/Images/snowy-village.jpg';
+import christmasMarket from '../../assets/Images/christmas2.jpg';
+import snowyVillage from '../../assets/Images/snowy-village.jpg';
 
 export default function Discover() {
   return (

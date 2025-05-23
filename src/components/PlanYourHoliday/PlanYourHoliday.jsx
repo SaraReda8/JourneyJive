@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './PlanYourHoliday.module.css'; 
 
 export default function PlanYourHoliday() {

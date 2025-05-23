@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import AirplaneLogo from '../../Assets/Icons/airplane.svg';
+import AirplaneLogo from '../../assets/Icons/airplane.svg';
 import {
   FaUmbrellaBeach,
   FaInfoCircle,
