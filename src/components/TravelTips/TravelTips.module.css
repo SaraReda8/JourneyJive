@@ -1,0 +1,101 @@
+
+  
+  /* Container for the entire Travel Tips section */
+  .travelTipsContainer {
+    padding: 2rem;
+    background-color: var(--bg-color);
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+  }
+  
+  .heroSection h1 {
+    font-size: 2.5rem;
+    color:var(--dark-color);
+    font-weight: bold;
+  }
+  
+  .heroSection p {
+    font-size: 1.2rem;
+    color:var(--sec-color);
+    font-weight: bold;
+  }
+  
+  .tipsSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+  
+  .tipCard {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover Effect for Cards */
+  .tipCard:hover {
+    transform: translateY(-10px);
+  }
+  
+  .tipImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .tipTitle {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color:var(--dark-color);
+  }
+  
+  .tipCard p {
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--darkgray-color);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .heroSection h1 {
+      font-size: 2rem;
+    }
+  
+    .heroSection p {
+      font-size: 1rem;
+    }
+  
+    .tipsSection {
+      grid-template-columns: 1fr;
+    }
+  
+    .tipCard {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heroSection h1 {
+      font-size: 1.6rem;
+    }
+  
+    .tipTitle {
+      font-size: 1.4rem;
+    }
+  
+    .tipCard p {
+      font-size: 0.9rem;
+    }
+  }
+  

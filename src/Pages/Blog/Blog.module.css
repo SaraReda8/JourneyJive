@@ -1,0 +1,148 @@
+/* Global styles */
+.borderSection {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    animation: fadeIn 1.5s forwards;
+    transition: transform 0.3s ease;
+  }
+  
+  .borderSection:hover {
+    transform: translateY(-10px);
+  }
+  
+  .borderSection .col-md-6 {
+    flex: 1 1 45%;
+    padding: 1rem;
+  }
+  
+  .borderSection .col-md-6:first-child {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .aboutImg {
+    width: 100%;
+    max-width: 480px; 
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    animation: fadeInScale 2s forwards;
+  }
+  
+  /* Title Styles */
+  .title {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #333;
+    margin-bottom: 1.2rem;
+  }
+  
+  .titleAnimation {
+    animation: slideInFromLeft 1s ease-out forwards;
+  }
+  
+  .text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .readMoreBtn {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+  
+  .readMoreBtn:hover {
+    background: #444;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    .borderSection {
+      padding: 1.5rem;
+    }
+  
+    .borderSection .col-md-6 {
+      flex: 1 1 100%; /* Stacks columns vertically on smaller screens */
+      padding: 0.5rem;
+    }
+  
+    .title {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .text {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .title {
+      font-size: 1.5rem; /* Further adjust font size for very small screens */
+    }
+  
+    .text {
+      font-size: 0.85rem; /* Further adjust font size for very small screens */
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .imgAnimation {
+    transition: transform 0.3s ease;
+  }
+  
+  .imgAnimation:hover {
+    transform: scale(1.05);
+  }
+  

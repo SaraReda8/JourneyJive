@@ -1,0 +1,72 @@
+.teamContainer {
+  padding: 50px;
+  text-align: center;
+  background-color: var(--bg-color);
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+  justify-items: center;
+}
+
+.teamMember {
+  background-color: var(--bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.teamMember:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: opacity 1s ease;
+}
+
+.memberName {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+.memberRole {
+  font-size: 1rem;
+  color: var(--gray-color);
+  margin: 5px 0 0;
+}
+
+.memberResponsibility {
+  font-size: 0.9rem;
+  color: var(--darkgray-color);
+  margin: 10px 0 0;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Animations */
+.fadeIn, .profileImage {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heading { font-size: 2rem; }
+  .memberName { font-size: 1.1rem; }
+  .memberRole { font-size: 0.9rem; }
+  .memberResponsibility { font-size: 0.85rem; }
+}

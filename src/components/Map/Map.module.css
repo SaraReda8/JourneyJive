@@ -1,0 +1,47 @@
+
+  
+  .mapContainer {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  }
+  
+  
+  .caption {
+    font-size: 20px;
+    color: var(--sec-color);
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  
+  .mapWrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect ratio */
+  }
+  
+  .map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

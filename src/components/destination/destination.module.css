@@ -1,0 +1,120 @@
+.destinationSection {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.subtitle {
+    font-family: 'Brush Script MT', cursive;
+    color: var(--sec-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-family: Arial, sans-serif;
+    font-size: 3rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    gap: 0; /* No grid gap */
+    grid-template-columns: repeat(12, 1fr); 
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; /* Center the grid */
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin: 2px; 
+    box-sizing: border-box; 
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin: 0.5rem;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 1.25rem;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.hoursBadge {
+    background-color: var(--sec-color);
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .hoursBadge {
+    opacity: 1;
+    
+}
+
+.card1 {
+    grid-column: span 3;
+}
+
+.card2 {
+    grid-column: span 6;
+}
+
+.card3 {
+    grid-column: span 3;
+}
+
+.card4, .card5 {
+    grid-column: span 6;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        height: 220px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,96 @@
+.everyone-holidays-section .card {
+    height: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.everyone-holidays-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.everyone-holidays-section .image-div {
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.3s ease;
+    border-radius: 10px 0 0 10px;
+    position: relative; 
+
+
+}
+
+.everyone-holidays-section .image-div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(63, 62, 62, 0.5); /* Gray gradient overlay */
+    z-index: 1; /* Places overlay above the image */
+    border-radius: 10px 0 0 10px; /* Match border radius */
+}
+
+.everyone-holidays-section .image-div h5 {
+    position: relative; /* Ensures text is above the overlay */
+    z-index: 2; /* Places text above the overlay */
+}
+
+.everyone-holidays-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.price {
+    color: var(--main-color); 
+}
+
+.advertisement-section {
+    background: linear-gradient(90deg, #ff4838, #77340b);
+    color: var(--beige-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .everyone-holidays-section .card {
+        height: 300px;
+    }
+
+    .advertisement-section {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 768px) {
+  .image-div {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-div {
+    height: 250px;
+
+  }
+
+  .advertisement-section {
+    font-size: 0.7rem;
+  }
+}

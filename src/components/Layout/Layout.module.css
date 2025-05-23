@@ -1,0 +1,12 @@
+.network {
+    color: red;
+    background-color: yellow;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  

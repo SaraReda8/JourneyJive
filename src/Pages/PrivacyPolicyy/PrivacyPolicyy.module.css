@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* Main Styles */
+.container {
+  margin: 60px auto;
+  padding: 20px;
+  max-width: 800px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card {
+  border: none;
+  padding: 2.5rem;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover { transform: scale(1.02); }
+
+.card-header {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-bottom: none;
+}
+
+/* Typography */
+.title {
+  font: 700 2.5rem 'Playfair Display', serif;
+  color: #333;
+  position: relative;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--sec-color, #00b4d8);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+.title:hover::after { width: 120px; }
+
+.text-muted {
+  color: #6c757d !important;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.text-main {
+  color: var(--sec-color) !important;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.text-main:hover {
+  color: var(--main-color) !important;
+  text-decoration: underline;
+}
+
+/* Section Headings */
+h2 {
+  font: 700 1.5rem 'Playfair Display', serif;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+h2::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--sec-color);
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes icon-bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-4px); }
+}
+h2 .icon { animation: icon-bounce 1s infinite alternate; }

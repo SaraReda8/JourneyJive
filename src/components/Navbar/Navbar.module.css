@@ -1,0 +1,80 @@
+
+
+.navbar {
+  background-color: white;
+  padding: 1rem 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.logo {
+    width: 32px;
+    height: auto;
+    aspect-ratio: 1 / 1; 
+   margin-right: 0.5rem;
+}
+
+.brandName {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2rem;
+  color: var(--dark-color);
+  transition: color 0.3s;
+}
+
+.brandName:hover {
+  color: var(--sec-color);
+}
+
+.navLinks .navlink {
+  font-size: 1rem;
+  color: var(--dark-color);
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.navLinks .navlink:hover {
+  color: var(--sec-color);
+}
+
+.mega-menu {
+  width: 900px;
+}
+
+.megaMenuContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.megaMenuItem {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.megaMenuItem:hover {
+  background-color: var(--bg-color);
+}
+
+.icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.navlink.active,
+.megaMenuItem.active {
+  color: var(--sec-color) !important;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .mega-menu {
+    width: 100%;
+  }
+
+  .megaMenuContainer {
+    grid-template-columns: 1fr;
+  }
+}

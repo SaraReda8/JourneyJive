@@ -1,0 +1,131 @@
+.title, .sectionTitle, .card-title, .header {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1.5s forwards;
+}
+.title, .sectionTitle, .card-title { font-size: 2rem; }
+.header { 
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    color: #333;
+}
+
+.text, .description, .content p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    animation: fadeIn 2s forwards;
+}
+.text {
+    font-size: 1.15rem;
+    color: #555;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+.description {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+/* Layout Components */
+.container {
+    padding: 2rem;
+    background-color: whitesmoke;
+    margin: 1.5rem auto 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card System */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+.card {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+.card:hover {
+    background-color: var(--sec-color);
+    transform: translateY(-8px);
+}
+.card:hover h4, .card:hover h5 { color: white; }
+
+.content {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.75rem;
+}
+.content p {
+    color: black;
+    font-size: 1rem;
+}
+
+/* Rating & Details */
+.rating {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    display: flex;
+    gap: 0.3rem;
+}
+.details {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.details img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.details h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    transition: color 0.3s ease;
+}
+.details h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+/* Image Styles */
+.aboutImg {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    animation: fadeInScale 2s forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container, .borderSection { padding: 1.5rem; }
+    .header { font-size: 2rem; }
+    .description { font-size: 1rem; }
+    .cards { gap: 1rem; }
+    .card { padding: 1rem; }
+    .details img { width: 50px; height: 50px; }
+    .borderSection .col-md-6 {
+        flex: 1 1 100%;
+        padding: 0.5rem;
+    }
+}

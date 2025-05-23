@@ -1,0 +1,155 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* Root Variables */
+:root {
+    --main-color: #ff4838;
+    --sec-color: #4d8cd1;
+    --dark-color: #363636;
+    --gray-color:#777777dc;
+    --darkgray-color:#555555;
+    --Gold-color: rgb(253, 214, 85);
+    --dark-blue: #213555;
+    --medium-blue: #3E5879;
+    --light-brown: #D8C4B6;
+    --font-family: 'Encode Sans Expanded', sans-serif;
+    --light-color: white;
+    --bg-color: #fffefe;
+    --beige-color: #F5EFE7;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --card-hover-shadow: rgba(0, 0, 0, 0.3);
+    --font-size-lg: 1.2rem;
+    --font-size-md: 1rem;
+    --font-size-sm: 0.9rem;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-family), 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Buttons */
+.btn1, .btn2, .btn3 {
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn1 {
+    font-size: 16px;
+    color: var(--light-color);
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    padding: 12px 24px;
+}
+
+.btn1:hover {
+    color: var(--main-color);
+    background: var(--light-color);
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn2 {
+    background: rgba(38, 133, 235, 0.77);
+    color: var(--light-color);
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: none;
+}
+
+.btn2:hover {
+    background: #0a4584;
+}
+
+.btn3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 13px 20px;
+    border: 2px solid black;
+    background: transparent;
+    color: var(--light-color);
+    position: relative;
+}
+
+.btn3:after {
+    content: "";
+    background: var(--sec-color);
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    z-index: -1;
+}
+
+.btn3:hover:after {
+    top: 0;
+    left: 0;
+}
+
+@media (min-width: 768px) {
+    .btn3 {
+        padding: 13px 50px;
+    }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-line:  underline;
+    text-decoration-style:solid;
+    text-decoration-color: #4d8cd1;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+.navlink {
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navlink:hover {
+    color: var(--sec-color);
+}
+
+.text-main {
+    color: var(--main-color);
+}
+.text-beige{
+    color: var(--beige-color);
+}
+.text-main:hover {
+    color: var(--dark-color);
+}
+
+/* Utility Classes */
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.widthc {
+    width: 450px;
+    height: auto;
+}
+
+.seccolor {
+    color: var(--sec-color);
+}
+
+.special {
+    font-family: 'Brush Script MT', cursive;
+}

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+
+:root {
+  --font-family-header: "Monoton", cursive;
+}
+
+.Logo {
+  text-align: center;
+  background-color: var(--dark-blue);
+  font-family: var(--font-family-header);
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  word-spacing: 30px;
+  letter-spacing: -5px;
+  padding: 2rem 0;
+  color: var(--beige-color);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 0;
+}
+
+.Logo:hover {
+  transform: scale(1.05);
+}
+
+.addForm {
+  background-color: var(--medium-blue);
+  color: var(--beige-color);
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.addForm h3 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+button,
+select,
+input {
+  background-color: var(--beige-color);
+  color: var(--dark-blue);
+  font-family: inherit;
+  border: none;
+  border-radius: 10rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.packing {
+    background-color: #D8C4B6;
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 8px; /* Optional: add rounded corners */
+  }
+  
+button:hover,
+select:hover,
+input:hover {
+  background-color: var(--light-brown);
+  transform: scale(1.05);
+
+}
+
+.addForm button {
+  background-color: var(--dark-blue);
+  color: var(--beige-color);
+}
+
+.list {
+  background-color: var(--light-brown);
+  color: var(--beige-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.list ul {
+  list-style: none;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--medium-blue);
+  border-radius: 10px;
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+}
+
+.list li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: var(--sec-color);
+}
+
+input[type="checkbox"] {
+  height: 1rem;
+  width: 2.5rem;
+  accent-color: var(--dark-blue);
+
+}
+.x{
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+
+.clear{
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--dark-blue);
+  border-radius: 6px;
+  background-color: white;
+  color: var(--dark-blue);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 50px;
+}
+select,
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--dark-blue);
+  border-radius: 6px;
+  background-color: white;
+  color: var(--dark-blue);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.Stats {
+  background-color: var(--beige-color);
+  text-align: center;
+  font-weight: 800;
+  padding: 2rem;
+color: var(--dark-blue);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .Logo {
+    font-size: 4.5rem;
+  }
+
+  .addForm h3 {
+    font-size: 1.8rem;
+  }
+
+  button,
+  select,
+  input {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .list ul {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .list li {
+    flex-direction: column;
+    text-align: center;
+  }
+}

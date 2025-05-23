@@ -1,0 +1,54 @@
+.LastHolidaysSection {
+    padding: 50px 0;
+  }
+  
+  .carousel {
+    max-width: 100%;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .cardImage {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .rating {
+    font-size: 0.9rem;
+    color: #FF9800;
+    margin-bottom: 5px;
+  }
+  
+  .cardTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .cardPrice {
+    font-size: 1.1rem;
+    color: #e63946;
+    margin-bottom: 10px;
+  }
+  
+  .cardDetails {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .text-main {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  

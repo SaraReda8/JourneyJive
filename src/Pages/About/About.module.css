@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.heroSection {
+  background-color: var(--bg-color);
+  padding: 50px 0; 
+}
+
+.timeline {
+  list-style: none;
+}
+
+.timeline li {
+  position: relative;
+  margin-bottom: 15px; 
+  padding-left: 25px; 
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 8px; 
+  height: 8px;
+  background-color: var(--sec-color);
+  border-radius: 50%;
+}
+
+/* Icons */
+.icon {
+  font-size: 1.8rem; 
+  color: var(--sec-color);
+}
+
+/* Card Styling */
+.card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Mission and Vision */
+.missionSection, .visionSection {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.missionSection p, .visionSection p {
+  font-size: 1rem; 
+  color: var(--darkgray-color);
+  line-height: 1.5; 
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.heading {
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.heading:hover {
+  color: var(--sec-color);
+}
+
+.heading {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.6rem; 
+  }
+
+  .heroSection {
+    padding: 30px 0; 
+  }
+
+  .timeline li {
+    padding-left: 20px; 
+  }
+
+  .card {
+    margin-bottom: 10px; 
+}
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}

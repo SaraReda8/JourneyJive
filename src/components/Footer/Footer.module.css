@@ -1,0 +1,344 @@
+
+
+.footer {
+  position: relative;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../../Assets/Images/header-bg.webp") no-repeat center center/cover;
+  padding: 50px 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer h5 {
+    font-size: 1rem;
+  }
+
+  .footer .col-md-6 {
+    text-align: center;
+  }
+}
+
+
+/* Footer titles */
+.footer h5,
+.footer h3 {
+  font-weight: bold;
+  color: var(--sec-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer h5 {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+
+
+.circleContainer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 5px auto;
+}
+
+.circularText {
+  width: 100%;
+  height: 100%;
+  animation: spin 10s linear infinite;
+}
+
+.circularText text {
+  font-size: 4px;
+  letter-spacing: 1.5px;
+  fill: #ffffff;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logoImage {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.centerText h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--sec-color);
+}
+
+.centerText p {
+  font-size: 12px;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Circular animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.center-text p {
+  font-size: 12px;
+  margin: 0;
+  color: var(--sec-color);
+}
+
+.circular-text {
+  width: 100%;
+  height: 100%;
+  transform: rotate(0deg);
+  animation: spin 10s linear infinite;
+}
+
+.circular-text text {
+  font-size: 4px;
+  letter-spacing: 2px;
+  fill: #fff;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Link animations */
+.animatedLink {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: rgb(234, 229, 229) !important;
+}
+
+.animatedLink:hover {
+ color: var(--sec-color);
+  text-decoration: underline;
+}
+
+.animatedLink::before {
+  content: "- ";
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.animatedLink:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Social media icon styles */
+.socialIcons .iconCircle {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.socialIcons .iconCircle:hover {
+  color: var(--sec-color);
+  transform: scale(1.1);
+}
+
+/* Reach Us styles */
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.iconWrapper .iconCircle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hwb(216 64% 31%);
+  color: #042d2d;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.iconWrapper .iconCircle:hover {
+  background-color: #e4e4e4;
+  transform: scale(1.1);
+}
+
+/* Payment icons */
+.icons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Footer bottom */
+.footer hr {
+  border-color: #0d0e0d;
+  margin: 20px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+/* General hover styles for links */
+.animatedLink {
+  color: #555; /* Default link color */
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.animatedLink:hover {
+  color:var(--sec-color); /* Example hover color */
+  text-decoration: underline; /* Optional hover effect */
+}
+
+
+/* Icons hover effect */
+.iconWrapper:hover {
+  color: var(--sec-color); /* Change icon color on hover */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.iconCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.iconCircle:hover {
+  background-color: var(--sec-color);
+}
+
+/* Footer titles */
+.footer h5,
+.footer h3 {
+  font-weight: bold;
+  color: var(--sec-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer h5 {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+/* Quote styles */
+.quote {
+  font-style: italic;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+/* Search input */
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius:  6px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+
+}
+
+/* Payment icons */
+.icons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Link hover effects */
+.animatedLink {
+  color: rgb(234, 229, 229) !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.animatedLink:hover {
+  color: var(--sec-color); /* Use the variable for hover */
+  text-decoration: underline; /* Optional hover effect */
+}
+
+/* Icon styles */
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.iconWrapper .iconCircle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hwb(216 64% 31%);
+  color: #042d2d;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.iconWrapper .iconCircle:hover {
+  background-color: #e4e4e4;
+  transform: scale(1.1);
+}

@@ -1,0 +1,52 @@
+.card {
+    background-image: url('../../Assets/Images/city-breaks-recommended-section-bg.webp'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    height: 500px; /* Adjust height as needed */
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    animation: slideDown 1.5s ease-in-out;
+
+}
+
+.content {
+    /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for text readability */
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: var(--beige-color);
+}
+
+.text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: var(--beige-color);
+
+}
+
+
+@keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

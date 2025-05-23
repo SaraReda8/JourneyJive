@@ -1,0 +1,147 @@
+.SearchSectionContainer {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-image: url('../../Assets/Images/holidays-hero-bg.webp');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .formContainer {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Brush Script MT', cursive;
+    color: var(--dark-color);
+  }
+  
+  .formGroupContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .formGroup {
+    flex: 1;
+    min-width: 150px;
+    margin-right: 10px;
+  }
+  
+  .label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    color: var(--dark-color);
+    text-align: start;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .inputField:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+    border: 1px solid rgba(0, 123, 255, 0.8);
+    background-color: #f9f9f9;
+    transform: scale(1.02);
+  }
+  
+  .btn2 {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn2:hover {
+    background-color: #004aad;
+    animation: buttonHover 0.3s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes buttonHover {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .formContainer {
+      width: 90%;
+      padding: 20px;
+      box-shadow: none;
+    }
+  
+    .formGroupContainer {
+      flex-direction: column;
+    }
+  
+    .formGroup {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .SearchSectionContainer {
+      height: auto;
+      padding: 15px;
+    }
+  
+    .formContainer {
+      padding: 15px;
+    }
+  
+    .inputField {
+      font-size: 0.9rem;
+    }
+  
+    .btn2 {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+  

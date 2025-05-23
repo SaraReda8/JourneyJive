@@ -1,0 +1,133 @@
+.carouselContainer {
+  margin: 40px auto;
+  padding: 0 20px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card {
+  background-color: var(--bg-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px var(--card-shadow);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px var(--card-hover-shadow);
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 400 / 250; 
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.1);
+}
+
+.cardContent {
+  padding: 15px;
+  text-align: center;
+  min-height: 150px; 
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: var(--text-color);
+}
+
+.info {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+
+.star {
+  color: var(--main-color);
+  font-size: 1.2rem;
+}
+
+.slick-slide {
+  padding: 0 15px;
+}
+
+.slick-list {
+  margin: 10px;
+}
+
+.slick-dots {
+  bottom: -20px;
+}
+
+.slick-dots li button:before {
+  color: var(--sec-color);
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--main-color);
+  font-size: 16px;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .cardImage {
+    height: 200px;
+  }
+
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+
+  .info {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .cardImage {
+    height: 180px;
+  }
+
+  .cardTitle {
+    font-size: 1.2rem;
+  }
+
+  .info {
+    font-size: 0.8rem;
+  }
+}

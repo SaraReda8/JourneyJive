@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* الأساسيات */
+.container {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 800px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card {
+  border: none;
+  padding: 2.5rem;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover { transform: scale(1.02); }
+
+.card-header {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-bottom: none;
+}
+
+/* النصوص والعناوين */
+.title {
+  font: 700 2.5rem 'Playfair Display', serif;
+  color: #333;
+}
+.title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: var(--sec-color);
+  margin: 0.5rem auto 0;
+  transition: width 0.3s ease;
+}
+.title:hover::after { width: 120px; }
+
+.text-muted {
+  color: #6c757d !important;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.text-main {
+  color: var(--sec-color) !important;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.text-main:hover {
+  color: var(--main-color) !important;
+  text-decoration: underline;
+}
+
+h2 {
+  font: 700 1.5rem 'Playfair Display', serif;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+h2::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--sec-color);
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+/* الحركات والتفاعلات */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes icon-bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-4px); }
+}
+h2 .icon { animation: icon-bounce 1s infinite alternate; }
